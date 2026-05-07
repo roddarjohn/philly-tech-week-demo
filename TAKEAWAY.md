@@ -13,7 +13,8 @@
   
 - Context isolation
   - Each agent gets only the context it needs
-  
+  - Some tasks require large context windows, some require less
+
 - Parallelism
 
 - Composability

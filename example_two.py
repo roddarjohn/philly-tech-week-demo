@@ -2,7 +2,7 @@ from crewai import LLM
 from crewai.flow.flow import Flow, listen, or_, router, start
 from pydantic import BaseModel
 
-from utils import read_brief, write_response
+from utils import read_brief, read_company, write_response
 
 llm = LLM(model="anthropic/claude-sonnet-4-6")
 MAX_REVISIONS = 2
@@ -10,6 +10,7 @@ MAX_REVISIONS = 2
 
 class State(BaseModel):
     brief: str = ""
+    company: str = ""
     research: str = ""
     draft: str = ""
     feedback: str = ""
@@ -30,9 +31,13 @@ class RFPFlow(Flow[State]):
     def write(self):
         self.state.draft = llm.call(f"""
             Draft a one-page Markdown proposal that addresses every
-            requirement, based on this research:
+            requirement, written from our company's perspective.
 
+            Research:
             {self.state.research}
+
+            Our company:
+            {self.state.company}
         """)
 
     @listen("revise")
@@ -64,6 +69,6 @@ class RFPFlow(Flow[State]):
 if __name__ == "__main__":
     name, brief = read_brief()
     flow = RFPFlow()
-    flow.kickoff(inputs={"brief": brief})
+    flow.kickoff(inputs={"brief": brief, "company": read_company()})
     output = write_response(f"example_two-{name}", flow.state.draft)
     print(f"\nWrote {output}")

@@ -3,13 +3,14 @@ from crewai.flow.flow import Flow, listen, or_, start
 from crewai.flow.human_feedback import human_feedback
 from pydantic import BaseModel
 
-from utils import read_brief, write_response
+from utils import read_brief, read_company, write_response
 
 llm = LLM(model="anthropic/claude-sonnet-4-6")
 
 
 class State(BaseModel):
     brief: str = ""
+    company: str = ""
     research: str = ""
     draft: str = ""
 
@@ -28,9 +29,13 @@ class RFPFlow(Flow[State]):
     def write(self):
         self.state.draft = llm.call(f"""
             Draft a one-page Markdown proposal that addresses every
-            requirement, based on this research:
+            requirement, written from our company's perspective.
 
+            Research:
             {self.state.research}
+
+            Our company:
+            {self.state.company}
         """)
 
     @listen(or_(write, "apply_revisions"))
@@ -58,6 +63,6 @@ class RFPFlow(Flow[State]):
 if __name__ == "__main__":
     name, brief = read_brief()
     flow = RFPFlow()
-    flow.kickoff(inputs={"brief": brief})
+    flow.kickoff(inputs={"brief": brief, "company": read_company()})
     output = write_response(f"example_three-{name}", flow.state.draft)
     print(f"\nWrote {output}")

@@ -1,7 +1,7 @@
 from crewai import LLM
 from crewai.flow.flow import Flow, listen, start
 
-from utils import read_brief, write_response
+from utils import read_brief, read_company, write_response
 
 claude = LLM(model="anthropic/claude-sonnet-4-6")
 openai = LLM(model="openai/gpt-4o-mini")
@@ -21,9 +21,13 @@ class RFPFlow(Flow):
     def draft(self, research):
         return claude.call(f"""
             Draft a one-page Markdown proposal that addresses every
-            requirement, based on this research:
+            requirement, written from our company's perspective.
 
+            Research:
             {research}
+
+            Our company:
+            {self.state['company']}
         """)
 
     @listen(draft)
@@ -38,6 +42,6 @@ class RFPFlow(Flow):
 
 if __name__ == "__main__":
     name, brief = read_brief()
-    result = RFPFlow().kickoff(inputs={"brief": brief})
+    result = RFPFlow().kickoff(inputs={"brief": brief, "company": read_company()})
     output = write_response(f"example_one-{name}", str(result))
     print(f"\nWrote {output}")

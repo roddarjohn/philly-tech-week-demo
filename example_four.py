@@ -2,19 +2,24 @@ import anthropic
 from crewai import LLM, Agent, Crew, Task
 from crewai.flow.flow import Flow, listen, start
 from crewai.mcp.config import MCPServerStdio
+from crewai.tools import tool
 from pydantic import BaseModel
 
-from utils import read_brief, write_response
+from utils import read_brief, read_company, write_response
 
 llm = LLM(model="anthropic/claude-sonnet-4-6")
 
 
+@tool
 def search_web(query: str) -> str:
+    """Search the web for the given query and return a summary of findings."""
     response = anthropic.Anthropic().messages.create(
         model="claude-haiku-4-5",
         max_tokens=2048,
         tools=[{"type": "web_search_20250305", "name": "web_search", "max_uses": 3}],
-        messages=[{"role": "user", "content": f"Search the web and summarize: {query}"}],
+        messages=[
+            {"role": "user", "content": f"Search the web and summarize: {query}"}
+        ],
     )
     return "".join(block.text for block in response.content if hasattr(block, "text"))
 
@@ -22,6 +27,7 @@ def search_web(query: str) -> str:
 class State(BaseModel):
     name: str = ""
     brief: str = ""
+    company: str = ""
     agency: str = ""
     research: str = ""
     draft: str = ""
@@ -30,15 +36,28 @@ class State(BaseModel):
 class RFPFlow(Flow[State]):
     @start()
     def research_agency(self):
-        agency = llm.call(f"""
-            From this RFP brief, identify the issuing agency.
-            Reply with only the agency name, nothing else.
-
-            {self.state.brief}
-        """).strip()
-        self.state.agency = search_web(
-            f"{agency} priorities, recent procurements, strategic goals"
+        # Agent (not a plain llm.call) so the LLM itself decides when to
+        # invoke the search tool mid-draft.
+        agent = Agent(
+            role="Agency Researcher",
+            goal="Identify the issuing agency from the RFP and research them",
+            backstory="An analyst skilled at desk research on public agencies.",
+            tools=[search_web],
+            llm=llm,
+            verbose=True,
         )
+        task = Task(
+            description=f"""
+                Identify the agency that issued this RFP brief, then use
+                the search tool to find recent priorities, similar
+                procurements, and other context useful to a bidder:
+
+                {self.state.brief}
+            """,
+            expected_output="A summary of the agency and helpful context.",
+            agent=agent,
+        )
+        self.state.agency = str(Crew(agents=[agent], tasks=[task]).kickoff())
         write_response(f"example_four-{self.state.name}-agency", self.state.agency)
 
     @listen(research_agency)
@@ -52,6 +71,8 @@ class RFPFlow(Flow[State]):
 
     @listen(research)
     def write(self):
+        # Agent (not a plain llm.call) so the LLM itself decides when to
+        # invoke the MCP tool mid-draft.
         agent = Agent(
             role="Proposal Writer",
             goal="Draft proposals with an accurate generation timestamp",
@@ -63,8 +84,9 @@ class RFPFlow(Flow[State]):
         task = Task(
             description=f"""
                 Call the time MCP to get the current UTC time, then draft a
-                one-page Markdown proposal for this RFP. Mark the top of
-                the proposal with "Generated: <UTC time>".
+                one-page Markdown proposal for this RFP from our company's
+                perspective. Mark the top of the proposal with "Generated:
+                <UTC time>".
 
                 RFP brief:
                 {self.state.brief}
@@ -74,6 +96,9 @@ class RFPFlow(Flow[State]):
 
                 About the agency:
                 {self.state.agency}
+
+                Our company:
+                {self.state.company}
             """,
             expected_output="A one-page proposal in Markdown with a timestamp at the top.",
             agent=agent,
@@ -84,6 +109,6 @@ class RFPFlow(Flow[State]):
 if __name__ == "__main__":
     name, brief = read_brief()
     flow = RFPFlow()
-    flow.kickoff(inputs={"name": name, "brief": brief})
+    flow.kickoff(inputs={"name": name, "brief": brief, "company": read_company()})
     output = write_response(f"example_four-{name}", flow.state.draft)
     print(f"\nWrote {output}")
