@@ -1,10 +1,7 @@
-import asyncio
-
 import anthropic
-from crewai import LLM
+from crewai import LLM, Agent, Crew, Task
 from crewai.flow.flow import Flow, listen, start
-from mcp import ClientSession, StdioServerParameters
-from mcp.client.stdio import stdio_client
+from crewai.mcp.config import MCPServerStdio
 from pydantic import BaseModel
 
 from utils import read_brief, write_response
@@ -20,19 +17,6 @@ def search_web(query: str) -> str:
         messages=[{"role": "user", "content": f"Search the web and summarize: {query}"}],
     )
     return "".join(block.text for block in response.content if hasattr(block, "text"))
-
-
-async def _mcp_get_time() -> str:
-    params = StdioServerParameters(command="uvx", args=["mcp-server-time"])
-    async with stdio_client(params) as (read, write):
-        async with ClientSession(read, write) as session:
-            await session.initialize()
-            result = await session.call_tool("get_current_time", {"timezone": "UTC"})
-            return result.content[0].text
-
-
-def now_via_mcp() -> str:
-    return asyncio.run(_mcp_get_time())
 
 
 class State(BaseModel):
@@ -68,20 +52,33 @@ class RFPFlow(Flow[State]):
 
     @listen(research)
     def write(self):
-        self.state.draft = llm.call(f"""
-            Draft a one-page Markdown proposal for this RFP, factoring in
-            what we learned about the agency. Mark the top of the proposal
-            with "Generated: {now_via_mcp()}".
+        agent = Agent(
+            role="Proposal Writer",
+            goal="Draft proposals with an accurate generation timestamp",
+            backstory="A proposal writer who calls the time MCP for every draft.",
+            mcps=[MCPServerStdio(command="uvx", args=["mcp-server-time"])],
+            llm=llm,
+            verbose=True,
+        )
+        task = Task(
+            description=f"""
+                Call the time MCP to get the current UTC time, then draft a
+                one-page Markdown proposal for this RFP. Mark the top of
+                the proposal with "Generated: <UTC time>".
 
-            RFP brief:
-            {self.state.brief}
+                RFP brief:
+                {self.state.brief}
 
-            Requirements & criteria:
-            {self.state.research}
+                Requirements & criteria:
+                {self.state.research}
 
-            About the agency:
-            {self.state.agency}
-        """)
+                About the agency:
+                {self.state.agency}
+            """,
+            expected_output="A one-page proposal in Markdown with a timestamp at the top.",
+            agent=agent,
+        )
+        self.state.draft = str(Crew(agents=[agent], tasks=[task]).kickoff())
 
 
 if __name__ == "__main__":
