@@ -12,6 +12,8 @@ You may desire:
 
 **Encode your "pipelines" in code**
 
+(this demo uses [Crew AI](https://github.com/crewaiinc/crewai))
+
 ## Follow along
 https://tinyurl.com/philly-tech-week-crew-ai
 
