@@ -25,6 +25,10 @@ four DIR="":
 five DIR="":
     uv run python example_five.py {{DIR}}
 
+# Run example six (composed: top-level flow calls ResearchFlow then WriteFlow)
+six DIR="":
+    uv run python example_six.py {{DIR}}
+
 # List available briefs
 briefs:
     @ls briefs
