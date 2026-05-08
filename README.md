@@ -38,7 +38,7 @@ Each example takes an optional path to a brief directory (defaults to
 `briefs/philly-portal`):
 
 ```sh
-just one                      # default brief
+just one
 just two
 just three
 just four
