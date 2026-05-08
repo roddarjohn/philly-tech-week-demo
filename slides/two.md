@@ -12,6 +12,7 @@
   
 - Context isolation
   - Each agent gets only the context it needs
+  - Can result in higher quality focused work
   - Some tasks require large context windows, some require less
 
 - Parallelism
@@ -20,5 +21,8 @@
   - Many workflows may have similar components that you can reuse (example six)
   
 Sample "production" example: example seven
+
+RFPs are a simple example, you could also pipeline coding, design,
+anything you use AI for.
   
 https://tinyurl.com/philly-tech-week-crew-ai
