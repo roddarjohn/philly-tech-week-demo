@@ -17,6 +17,6 @@
 - Parallelism
 
 - Composability
-  - Many workflows may have similar components that you can reuse
+  - Many workflows may have similar components that you can reuse (example six)
   
-  
+https://tinyurl.com/philly-tech-week-crew-ai
