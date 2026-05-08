@@ -3,10 +3,11 @@
 Assumptions:
 - Prompts floating around
 - Experimenting with orchestration methods
+- You may be frustrated by LLMs ignoring instructions
 
 You may desire:
 - To "productionize" hand managed pipelines
-- Use more complex AI methods (agents checking agents, human in loop)
+- To use more complex AI methods (agents checking agents, human in loop)
 - To create composable building blocks
 
 **Encode your "pipelines" in code**
