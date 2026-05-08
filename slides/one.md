@@ -5,8 +5,9 @@ Assumptions:
 - Specific flows to progress through the prompts
 
 You may desire:
-- To scale a process and make repeatable
-- Automate agents checking agents, human in the loop
+- To "productionize" hand managed pipelines
+- Use more complex AI methods (agents checking agents, human in loop)
+- To create composable building blocks
 
 **Encode your "pipelines" in code**
 
