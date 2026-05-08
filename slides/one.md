@@ -1,8 +1,8 @@
 # What's next?
 
 Assumptions:
-- Many prompts floating around
-- Specific flows to progress through the prompts
+- Prompts floating around
+- Experimenting with orchestration methods
 
 You may desire:
 - To "productionize" hand managed pipelines
@@ -15,5 +15,3 @@ You may desire:
 
 ## Follow along
 https://tinyurl.com/philly-tech-week-crew-ai
-
-
