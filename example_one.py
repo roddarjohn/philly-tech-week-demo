@@ -14,7 +14,7 @@ class RFPFlow(Flow):
             Extract requirements, evaluation criteria, and risks
             from this RFP brief:
 
-            {self.state['brief']}
+            {self.state["brief"]}
         """)
 
     @listen(research)
@@ -27,7 +27,7 @@ class RFPFlow(Flow):
             {research}
 
             Our company:
-            {self.state['company']}
+            {self.state["company"]}
         """)
 
     @listen(draft)
@@ -43,5 +43,6 @@ class RFPFlow(Flow):
 if __name__ == "__main__":
     name, brief = read_brief()
     result = RFPFlow().kickoff(inputs={"brief": brief, "company": read_company()})
+
     output = write_response(f"example_one-{name}", str(result))
     print(f"\nWrote {output}")
