@@ -1,7 +1,8 @@
-# RFP Writer — CrewAI Flow Demo
+# CrewAI Flow Demo - RFP Writer
 
-Five small examples that build up CrewAI's `Flow` primitives, from a simple
-sequential chain to parallel branches.
+Developed for Philly Tech Week.
+
+Distributed under no license.
 
 ## Setup
 
@@ -14,6 +15,8 @@ sequential chain to parallel branches.
    ```sh
    cp .env.example .env
    ```
+   
+   To make all examples work, please update `.env` to include:
    - `ANTHROPIC_API_KEY` — required for all examples
    - `OPENAI_API_KEY` — required for example one (review step uses GPT)
 
@@ -24,7 +27,6 @@ Each example takes an optional path to a brief directory (defaults to
 
 ```sh
 just one                      # default brief
-just one briefs/data-warehouse
 just two
 just three
 just four
@@ -64,18 +66,3 @@ briefs/
 ```
 
 Then run any example with `just <num> briefs/my-rfp`.
-
-## Layout
-
-```
-example_one.py      # sequential chain, multi-provider
-example_two.py      # router + revise loop
-example_three.py    # human-in-the-loop
-example_four.py     # web_search + MCP via Agent
-example_five.py     # parallel fan-out, and_ join
-plot.py             # render any flow's graph
-utils.py            # read_brief / write_response
-briefs/             # input briefs (committed)
-responses/          # generated outputs (gitignored)
-dist/               # rendered flow graphs (gitignored)
-```

@@ -13,6 +13,6 @@ You may desire:
 **Encode your "pipelines" in code**
 
 ## Follow along
-Repository: https://tinyurl.com/philly-tech-week-crew-ai
+https://tinyurl.com/philly-tech-week-crew-ai
 
 
