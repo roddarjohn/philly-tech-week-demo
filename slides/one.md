@@ -12,7 +12,7 @@ You may desire:
 
 **Encode your "pipelines" in code**
 
-Follow along:
+## Follow along
 Repository: https://tinyurl.com/philly-tech-week-crew-ai
 
 
