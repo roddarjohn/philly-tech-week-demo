@@ -6,29 +6,15 @@ Distributed under no license.
 
 ## Examples
 
-### Example one:
-- Three steps
-- Crew AI has a graph
-- Observe OpenAI "revising" Claude
-
-### Example two:
-- Introduces a review flow
-
-### Example three:
-- Introduces a human review step
-
-### Example four:
-- Introduces a custom tool + MCP
-- Introduces full subagents
-
-### Example five:
-- In parallel
-
-## Example six:
-- Composability
-
-### Example seven:
-- What this may look like in production
+| # | What it shows |
+|---|---|
+| `one`   | Three steps; Crew AI has a graph; observe OpenAI "revising" Claude |
+| `two`   | Introduces a review flow |
+| `three` | Introduces a human review step |
+| `four`  | Introduces a custom tool + MCP; introduces full subagents |
+| `five`  | In parallel |
+| `six`   | Composability |
+| `seven` | What this may look like in production |
 
 ## Setup
 
