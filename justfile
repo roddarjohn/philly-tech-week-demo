@@ -29,6 +29,10 @@ five DIR="":
 six DIR="":
     uv run python example_six.py {{DIR}}
 
+# Run example seven (production: package combining everything)
+seven DIR="":
+    uv run python -m example_seven {{DIR}}
+
 # List available briefs
 briefs:
     @ls briefs
