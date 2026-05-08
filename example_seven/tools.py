@@ -1,5 +1,4 @@
 import anthropic
-from crewai.mcp.config import MCPServerStdio
 from crewai.tools import tool
 
 
@@ -15,6 +14,3 @@ def search_web(query: str) -> str:
         ],
     )
     return "".join(block.text for block in response.content if hasattr(block, "text"))
-
-
-TIME_MCP = MCPServerStdio(command="uvx", args=["mcp-server-time"])
