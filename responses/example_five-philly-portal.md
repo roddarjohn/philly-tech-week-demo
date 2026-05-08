@@ -1,407 +1,326 @@
 # Executive Summary
 
-# Tech Week Consortium — Executive Summary
-## City of Philadelphia OPAL Project: Supply Chain Strategy Development and Document Rationalization
+# Executive Summary: Tech Week Consortium Response to City of Philadelphia Special Event Permitting Software Solution RFP (Project Intake #1140)
 
-Tech Week Consortium (TWC) is pleased to respond to the City of Philadelphia's Office of Innovation and Technology RFP for the OPAL Project — Supply Chain Strategy Development and Document Rationalization. As a Philadelphia-based, worker-owned civic technology cooperative headquartered three blocks from City Hall, TWC brings a singular combination of local institutional knowledge, public-sector technology depth, and procurement reform expertise to this engagement. We have worked continuously with the City since 2016, hold active City of Philadelphia M/W/DSBE certification, and carry SOC 2 Type II and FedRAMP Moderate authorizations that directly address the RFP's cybersecurity, data governance, and secure infrastructure requirements. Our proposed team will conduct a full inventory and rationalization of the City's procurement and legal document ecosystem — spanning regulations, contracts, solicitation documents, attachments, and standard operating materials across all nineteen template categories identified in the RFP — and deliver a clause library-ready, searchable document management structure aligned with the City's planned Workday ERP implementation and Code and Charter update timelines. We are prepared to execute all four project phases — Initiation, Design, Creation, and Implementation — within the twelve-month contract window, with a target completion date on or before May 2027.
+Tech Week Consortium (TWC) is uniquely positioned to deliver the City of Philadelphia's next-generation Special Event Permitting Software Solution. As a Philadelphia-based, worker-owned civic technology cooperative headquartered three blocks from City Hall, TWC brings a decade of direct partnership with the City — most notably our ongoing engagement with the Department of Licenses and Inspections, where we rebuilt the public-facing licensing portal serving approximately 85,000 active licenses and cut average completion time by nearly 80%. Our proposed solution directly addresses OCRSE's core pain points: we will replace the current static, PDF-driven process with a dynamic, event-type-aware permitting platform featuring configurable conditional logic workflows, real-time status tracking, interdepartmental task coordination, integrated payment processing, and robust reporting infrastructure — all capable of handling the required 1,700+ annual applications with capacity for surge periods. Built on our proven `civitas` framework for accessible civic web applications, the solution will be installed on City infrastructure, comply fully with all Appendix K IT and security standards, and meet WCAG 2.1 AA accessibility requirements as a baseline — not an afterthought.
 
-TWC's qualifications are directly matched to the competencies the City has identified as essential. Our procurement and program advisory practice has supported public agencies in scoping and structuring complex technology and operational procurements, and our staff includes advisors with former municipal CIO experience and civil rights law backgrounds well-suited to the Law Department's document needs. We have deep hands-on experience evaluating and integrating enterprise document management and ERP systems — including Oracle-based platforms comparable to the City's existing ACIS environment — and we are prepared to conduct a rigorous, independent assessment of Workday Strategic Sourcing's clause library limitations and recommend viable alternatives or integrations. Our commitment to open-source delivery, transparent reporting, and procurement reform as a practice value means the City will receive not only compliant deliverables but durable, maintainable systems and templates that will outlast this contract cycle. We propose a fixed-price engagement with milestone-based invoicing, weekly project team meetings, quarterly executive reporting, and proactive identification of Quick Wins throughout each phase — ensuring the City realizes tangible efficiency gains well before final implementation.
-
-# Technical Approach
+TWC offers the City a combination of technical depth, local accountability, and structural alignment that no outside vendor can replicate. Our SOC 2 Type II certification, FedRAMP Moderate authorization, and demonstrated experience delivering on-premises municipal systems mean we are fully prepared to meet every technical, security, and data-governance requirement outlined in this RFP. Our 100% client renewal rate over 12 consecutive quarters and our no-subcontracting model guarantee that the same experienced team that wins this contract will design, build, and support it — with no handoffs to unfamiliar staff. We will deliver a fixed-price proposal with milestone-based payments, a 30-day reliability period, a full five-year maintenance commitment, and source code escrow at no cost to the City. All custom code developed under this contract will be delivered to the City under an open-source license, ensuring Philadelphia retains full ownership and long-term independence from any single vendor — consistent with our founding principle that public money should produce public code.
 
 # Technical Approach
 
-## Tech Week Consortium (TWC) — OPAL Project: Supply Chain Strategy Development and Document Rationalization
+# Technical Approach
 
-**Submitted to:** City of Philadelphia, Office of Innovation and Technology
-**On behalf of:** Procurement Department and Law Department
-**Proposal Lead:** R. Park, Procurement Specialist
-
----
-
-## 1. Overview of Our Approach
-
-Tech Week Consortium approaches the OPAL Project as a structured, four-phase engagement that balances rigorous analytical discipline with practical, implementable outcomes. Our method is grounded in three operating principles that directly address the City's stated needs:
-
-**Inventory before design.** We will not presuppose the rationalized document architecture before completing a thorough, validated inventory of what exists. Premature consolidation creates technical debt in document management at the same scale as premature code consolidation in software systems.
-
-**Clause-first thinking from day one.** Even in Phase I, when we are only cataloging, we will tag documents against a provisional clause taxonomy. This ensures that the design and creation phases build on structured, attributable data rather than narrative impressions.
-
-**Alignment with OPAL ERP realities.** Workday Strategic Sourcing's clause library functionality is noted as limited. We treat that constraint as a primary design driver, not a footnote. Our system recommendations will be grounded in hands-on evaluation of Workday's actual capabilities and shortfalls — and will present the City with a clear, costed decision framework for augmentation or integration with a purpose-built contract lifecycle management (CLM) or clause library platform.
-
-The sections below describe our approach at the task level, organized by project phase, with supporting notes on our methodology, deliverables, team engagement model, and quick-win identification process.
+## City of Philadelphia Special Event Permitting Software Solution
+### Submitted by: Tech Week Consortium (TWC)
+### Project Intake #1140
 
 ---
 
-## 2. Phase I — Initiation (Target Completion: June 2026)
+## 1. Overview and Guiding Principles
 
-### 2.1 Kick-Off and Stakeholder Alignment
+Tech Week Consortium approaches the City of Philadelphia's Special Event Permitting Software Solution as a problem we are distinctly positioned to solve. We are a Philadelphia-based worker cooperative headquartered three blocks from City Hall. We have maintained a continuous engagement with the City's Department of Licenses and Inspections since 2016, and our staff includes former municipal CIOs who have navigated the City's technical standards, network environment, and interdepartmental coordination challenges from the inside. We understand that the Office of City Representative and Special Events (OCRSE) is not primarily looking for novel technology—it is looking for a system that staff and applicants will actually use, that City IT can maintain without perpetual vendor dependency, and that will still be functioning correctly when the next administration takes office.
 
-Within the first two weeks of contract execution, TWC will convene a formal project kick-off with the City's Project Manager and key stakeholders from the Procurement Department and Law Department. The objectives of this session are to:
+Our technical approach is organized around four commitments that flow directly from that understanding:
 
-- Confirm the project charter, governance structure, and decision rights;
-- Introduce the TWC project team and establish communication protocols;
-- Align on the escalation path for scope questions, legal interpretations, and system-access logistics;
-- Review and finalize the baseline project schedule in Gantt format, incorporating the OPAL ERP implementation timeline and any known City Code or Charter update milestones;
-- Establish the weekly project team meeting cadence, consistent with the City Project Manager's requirements for frequency, format, and location.
-
-We will also conduct a working session dedicated specifically to systems access — requesting read-level access to PHLContracts, ACIS, FAMIS, ADPICs, shared drives, SharePoint, and the OnePhilly Oracle Platform, as well as access to Workday ERP documentation and the Workday Strategic Sourcing module configuration for the planned OPAL deployment. Early access enables us to begin the document inventory in parallel with stakeholder interviews rather than sequentially.
-
-### 2.2 Document Inventory and Validation
-
-TWC will conduct a comprehensive inventory of all existing documents and templates across the six document type categories specified in the RFP: Regulations, Policies & Procedures; Contracts & Agreements; Solicitation Documents (RFxs); Attachments & Exhibits; Standard Operating Manuals & FAQs; and Standard Promotional Documents.
-
-Our inventory methodology combines automated extraction with structured human review:
-
-**Automated discovery.** We will use scripted crawls of shared drives and SharePoint repositories to enumerate files by type, date, owner, and modification history. Where PHLContracts, ACIS, or OnePhilly provide API or export access, we will extract document metadata programmatically. For FAMIS and ADPICs (mainframe systems), we will work with City IT staff to obtain data exports in structured formats.
-
-**Structured human review.** Each document identified by automated discovery will be reviewed by a TWC analyst against a standardized classification schema covering: document type (per RFP Section 2.1), template category (per RFP Section 2.2), funding source (Federal vs. Local), solicitation method (IFB, RFP, RFQ, Brooks Method, standalone), current status (active, superseded, draft, unknown), and associated attachments, exhibits, and disclosures.
-
-**Stakeholder interviews.** We will conduct structured interviews with procurement officers, Law Department attorneys, departmental contract administrators, and operational staff who use or produce documents in scope. These interviews surface informal templates, department-specific variants, and legacy documents that do not appear in any formal repository — a common finding in decentralized municipal procurement environments.
-
-**Scope validation.** Upon completing the initial inventory, we will present the City with a validated scope document confirming the count and types of documents and templates in scope, and flagging any document types or categories that warrant scope adjustment before Phase II begins. This prevents scope drift and ensures the City retains decision authority over what gets rationalized.
-
-### 2.3 Gap and Redundancy Analysis
-
-Using the validated inventory as the baseline, TWC will conduct a systematic gap and redundancy analysis. We will identify:
-
-- **Gaps:** Document or template types required by City procurement regulations, applicable federal requirements, or the planned OPAL workflow that do not currently exist in any form;
-- **Redundancies:** Multiple documents or templates that serve the same functional purpose, including department-specific variants of what should be standard City-wide templates;
-- **Inconsistencies:** Documents that address the same clause topic (e.g., indemnification, insurance, DBE requirements) with materially different language across template categories, creating legal and operational risk.
-
-This analysis will be documented in the **Current State Diagnostic Report**, which is one of the three required formal reports under the engagement. The report will present findings in an executive-accessible format and include a prioritized list of gaps and redundancies with recommended disposition for each.
-
-### 2.4 Document Rationalization Plan and Storage Structure Design
-
-TWC will develop a document rationalization plan that defines how existing documents and templates should be aggregated, consolidated, retired, or preserved into a logical storage structure. The storage structure will be designed to support:
-
-- Search by document type, department, expiry date, creation date, and revision history;
-- Cross-reference capability linking related documents (e.g., a solicitation template cross-referenced to its standard contract template, required exhibits, and applicable clause library entries);
-- Version control and audit trail, so that any point-in-time version of any document is recoverable;
-- Role-based access, distinguishing between documents that are publicly viewable, internally accessible, and restricted to legal review.
-
-We will present the rationalization plan to the City before proceeding with detailed content development, consistent with the RFP's requirement that recommendations be made before Phase III work begins. The City's approval of the rationalization plan is a formal gate before Phase II design work commences.
-
-### 2.5 Template Index
-
-TWC will generate a comprehensive template index designating each template as:
-
-- **Existing** — template is current, compliant, and requires no modification;
-- **Existing, revision required** — template exists but requires updates for legal compliance, OPAL alignment, consistency with the rationalized clause library, or efficiency;
-- **New** — template does not exist and must be created in Phase III.
-
-The template index will cover all 19 template categories identified in the RFP (Goods through the three NDA variants) and will serve as the master work plan driving Phase II and Phase III activity. It will be maintained as a living document throughout the engagement, updated as the design and creation phases surface additional findings.
+1. **Boring, well-supported technology.** We do not introduce a dependency for which we cannot identify a ten-year support story. Every architectural decision below reflects that discipline.
+2. **Accessibility-first design.** Every screen, workflow, and report will meet WCAG 2.1 AA (and be tested against WCAG 2.2 AA) before it is deployed. We publish a public Accessibility Conformance Report (ACR) for every shipped application.
+3. **On-premises, City-owned infrastructure.** Per requirement T-001, the system will run on existing City equipment and networks. We have designed the architecture accordingly, with no cloud-hosted components in the production path unless the City's IT division requests otherwise.
+4. **Open by default.** All custom code produced under this contract will be delivered to the City with full source code, documentation, and specifications as required by SC-001. Non-proprietary components will be MIT-licensed and contributed to the civic-tech commons, consistent with our cooperative's standing practice.
 
 ---
 
-## 3. Phase II — Design (Target Completion: Early September 2026)
+## 2. Proposed System Architecture
 
-### 3.1 Template Structure Modeling
+### 2.1 Architecture Pattern
 
-For each template category in the validated template index, TWC will develop a **template structure model** — a hierarchical outline defining the logical sections of the template, the clauses that populate each section, and the designation of each clause as fixed or variable.
+We propose a **three-tier web application** architecture:
 
-**Fixed clauses** are those whose content is identical across all uses of the template — standard City boilerplate, statutory requirements, and federally mandated provisions. Fixed clauses are locked in the clause library and cannot be modified by the contract administrator at document assembly time.
+| Tier | Role | Primary Technology |
+|------|------|--------------------|
+| Presentation | Browser-rendered UI for applicants and City staff | Server-rendered HTML with progressive enhancement; Django Jinja2 templates |
+| Application | Business logic, workflow engine, API layer | Django 5.x (Python 3.12), Django REST Framework |
+| Data | Relational persistence, document storage, search | PostgreSQL 16, pgvector (for future search), local file storage with configurable NAS mount |
 
-**Variable clauses** are those whose content changes based on transaction characteristics — scope of work, price, term, specific insurance thresholds, DBE participation targets, and similar deal-specific terms. Variable clauses are drafted with clearly marked insertion fields, and where multiple standard options exist (e.g., a standard insurance clause versus a high-risk insurance clause), those options are presented as **alternate clauses** within the library, with guidance on selection criteria.
+This is the same core stack TWC uses in our L&I engagement, which has processed approximately 85,000 active business and trade licenses without material downtime. It is well-understood by City IT, well-documented in the open-source community, and trivially maintainable by any competent Python developer—not only by TWC.
 
-**Fallback clauses** — standard alternative language for situations where the preferred clause is rejected in negotiation — will be drafted for key negotiable provisions in RFP-sourced contracts (Professional Services, IT Software, IT Services, AE, CM, HHS, and Benefits categories). Fallback clauses are not applicable to IFB-sourced contracts, which are non-negotiable by design.
+We deliberately avoid a heavy single-page application (SPA) frontend framework. Server-rendered HTML with progressive enhancement means that the application works on low-bandwidth connections, works with assistive technologies out of the box, and does not require a separate frontend build pipeline that City IT must learn to maintain. JavaScript is used only where it provides a clear, tested user-experience benefit—inline form validation, conditional field display—and every such enhancement degrades gracefully.
 
-This fixed/variable/alternate/fallback architecture ensures that the clause library functions not merely as a document storage system but as an active governance tool — limiting unauthorized variation while preserving appropriate flexibility for complex procurements.
+### 2.2 System Topology Diagram
 
-### 3.2 Systems Evaluation
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  City of Philadelphia Network Perimeter                         │
+│                                                                 │
+│  ┌─────────────┐    ┌──────────────┐    ┌───────────────────┐  │
+│  │  Reverse    │    │  Application │    │  Database         │  │
+│  │  Proxy /    │───▶│  Server(s)   │───▶│  Server           │  │
+│  │  Load Bal.  │    │  (Django)    │    │  (PostgreSQL 16)  │  │
+│  │  (nginx)    │    │              │    │                   │  │
+│  └─────────────┘    └──────┬───────┘    └───────────────────┘  │
+│         ▲                  │                                    │
+│         │                  │ async tasks                        │
+│  Public │           ┌──────▼───────┐    ┌───────────────────┐  │
+│  Internet           │  Task Queue  │    │  Document / File  │  │
+│  (HTTPS) │           │  (Celery +   │    │  Storage (NAS /   │  │
+│         │           │   Redis)     │    │   local mount)    │  │
+│  ┌──────┴──────┐    └──────────────┘    └───────────────────┘  │
+│  │  City VPN / │                                               │
+│  │  Staff Net  │    ┌──────────────────────────────────────┐   │
+│  └─────────────┘    │  Integration Layer (REST / webhooks) │   │
+│                     │  ─ City payment processor            │   │
+│                     │  ─ City GIS / ArcGIS                 │   │
+│                     │  ─ Business licensing database       │   │
+│                     │  ─ City SSO (SAML 2.0 / OIDC)        │   │
+│                     └──────────────────────────────────────┘   │
+└─────────────────────────────────────────────────────────────────┘
+```
 
-TWC will conduct a structured evaluation of both existing and planned systems for their suitability to store, search, manage, and assemble documents and templates. This evaluation will cover:
+*Full-resolution topology diagrams, including network segmentation and firewall zone mapping, will be delivered as Exhibit A to the Statement of Work during the kickoff phase.*
 
-**Existing systems:**
-- PHLContracts (SaaS): document storage, search, and contract lifecycle capabilities;
-- ACIS (Oracle-based): procurement transaction data and linkage to contract documents;
-- FAMIS and ADPICs (mainframe): legacy financial and procurement data with document attachments;
-- SharePoint: current informal template storage and collaboration;
-- Shared drives: informal document repositories;
-- OnePhilly Oracle Platform: integrated financial system capabilities.
+### 2.3 Component Justification
 
-**Planned systems:**
-- Workday ERP (core Procurement and Finance modules): workflow, approval routing, and procurement transaction management;
-- Workday Strategic Sourcing: solicitation management and supplier engagement;
-- Workday Strategic Sourcing clause library: the RFP specifically notes this functionality as limited, and our evaluation will assess precisely what is and is not supported — including clause tagging, controlled insertion, version management, and approval workflows for clause modifications.
+**nginx reverse proxy / load balancer.** nginx is battle-tested, widely deployed in City environments, and has a clear long-term support path. It handles TLS termination, rate limiting, and static asset serving, keeping the application tier focused on business logic. A second nginx instance can be activated for load balancing in a future high-availability configuration without application-layer changes.
 
-Each system will be evaluated against the preferred technology capability dimensions identified in the RFP: secure and compliant infrastructure, cybersecurity and regulatory compliance, data governance and information management, digital service delivery, enterprise systems modernization, transparency and reporting, and program and portfolio governance.
+**Django 5.x application server.** Django's built-in ORM, admin scaffolding, authentication framework, and form library dramatically reduce the surface area of custom code we must write—and that the City must eventually maintain. Django has a published Long Term Support (LTS) release cycle; Python itself has a well-documented deprecation cadence. We estimate the proposed stack will be maintainable with standard open-source tooling through at least 2035.
 
-### 3.3 System Recommendations
+**PostgreSQL 16.** The City's L&I engagement already runs PostgreSQL. City IT has operational familiarity, existing backup tooling, and established access controls for this database. PostgreSQL's row-level security, native JSON support, and full-text search reduce the need for auxiliary services.
 
-TWC's system recommendations will be delivered as a formal decision framework, not simply a ranked list of alternatives. The framework will present:
+**Celery + Redis task queue.** Workflow notifications, report generation, document processing, and payment webhook handling run asynchronously through Celery workers backed by a Redis broker. This keeps synchronous HTTP response times fast (see Section 4, Performance Standards) and isolates failure domains—a delayed notification job does not affect permit submission throughput.
 
-- **Option A: Workday-native.** What can be achieved using Workday Strategic Sourcing's clause library as configured, with any available configuration enhancements. Honest assessment of gaps and limitations.
-- **Option B: Workday plus integration.** Augmentation of Workday with a dedicated CLM or clause library platform (e.g., Ironclad, Conga, Agiloft, or a comparable open-source alternative) via API integration. Cost, implementation complexity, and maintenance overhead assessed.
-- **Option C: Parallel document management.** Use of a separate document management platform (e.g., SharePoint with structured metadata, or a purpose-built system) for template and clause storage, with workflow integration to Workday for solicitation and contract execution. Assessed for scenarios where deep Workday integration is not feasible within the OPAL timeline.
-
-For each option, TWC will provide: a capability gap analysis against the rationalized clause library requirements, an estimated implementation cost range, a risk assessment, and a recommendation with rationale. The City retains full decision authority; our role is to provide the structured evidence base for that decision.
-
-These findings will be incorporated into the **Future State Organization Model and Governance Framework Recommendation**, the second of the three required formal reports.
-
----
-
-## 4. Phase III — Creation (Target Completion: Late December 2026)
-
-### 4.1 Content Development Methodology
-
-Phase III is the primary content production phase. TWC will develop new and revised document content across all template categories identified in the Phase I template index, working in the clause-first structure established in Phase II.
-
-Our content development process follows a defined review cycle for each template:
-
-1. **Draft development.** TWC staff with procurement document experience draft clause content, working from the Phase II clause taxonomy, existing City documents, applicable federal regulations, Pennsylvania procurement law, and the City's Code and Charter.
-2. **Internal legal and procurement review.** Draft clauses are reviewed internally by TWC's part-time legal advisors (including advisors with civil rights law and public procurement backgrounds) before submission to the City.
-3. **City review.** Drafts are submitted to the Procurement Department and Law Department for substantive review. We will structure review cycles to batch related template categories together, reducing the review burden on City staff and ensuring consistency across related templates.
-4. **Reconciliation and finalization.** TWC incorporates City feedback, documents any unresolved questions for escalation, and produces final clause library entries and assembled template documents.
-5. **Index update.** The template index is updated to reflect completed templates and any scope changes surfaced during content development.
-
-### 4.2 Coverage Across Template Categories
-
-The 19 template categories present a range of complexity and federal compliance requirements. TWC will sequence development to address highest-risk and highest-volume categories first:
-
-- **Priority Tier 1** (Weeks 1–6 of Phase III): Professional Services, IT Software, IT Services, Construction — highest transaction volume and greatest legal complexity, including federal funding clauses for all four categories.
-- **Priority Tier 2** (Weeks 7–12): Equipment, IT Hardware, AE, CM, HHS — technically specialized; require close coordination with Law Department on federal flow-down requirements.
-- **Priority Tier 3** (Weeks 13–18): Goods, Vehicle, Maintenance/Site Services, Benefits, Staff Augmentation, Artist, RFQ, three NDA variants — generally lower complexity; some are local-only and IFB-only, reducing the matrix of clause variants.
-
-This sequencing ensures that the most consequential templates are reviewed and finalized earliest, with buffer time in December 2026 for any Tier 3 items that surface unexpected complexity.
-
-### 4.3 Standard Alternate and Fallback Clause Content
-
-For each clause designated as variable or negotiable, TWC will develop a full set of standard alternate clauses (pre-approved alternative formulations for standard scenarios) and fallback clauses (pre-approved fallback language for negotiation situations). These will be stored in the clause library with metadata indicating:
-
-- The conditions under which each alternate or fallback is appropriate;
-- The approval level required to use a non-standard clause (e.g., Law Department sign-off for departure from the primary clause);
-- The legal risk profile of the fallback relative to the primary clause.
-
-This structure transforms the clause library from a passive repository into an active negotiation tool, enabling contract administrators to navigate counterparty pushback within pre-approved guardrails rather than escalating every deviation to Law Department review.
-
-### 4.4 Regenerated Template Index
-
-Upon completion of Phase III, TWC will deliver a fully regenerated template index covering all templates — existing, revised, and newly created. The regenerated index will serve as the master reference document for Phase IV implementation and ongoing template governance.
+**Custom workflow engine (TWC `civitas-workflow` module).** Our `civitas` framework, currently MIT-licensed and in production use by 14 municipalities, includes a configurable workflow engine that implements conditional logic, role-based routing, and multi-step approval chains using a declarative configuration format. Workflows are defined in YAML and stored in the database; they can be modified by authorized City administrators without a code deployment. This directly addresses requirements F-005 (conditional logic workflows), F-003 (service request generation), and PS-008 (post-implementation adjustments by City personnel).
 
 ---
 
-## 5. Phase IV — Implementation (January 2027 – April 2027)
+## 3. Functional Architecture
 
-### 5.1 Implementation Coordination
+### 3.1 Application Management (F-001 through F-008)
 
-Phase IV translates the rationalized documents, templates, and clause library into operational use within the City's document management and procurement systems. TWC will coordinate implementation activities with:
+The permit application subsystem is the core of the proposed solution. We design it around the following principles:
 
-- The OPAL ERP implementation team (Workday deployment), to ensure template and clause library content is loaded into Workday in a format compatible with the live system configuration;
-- The City's IT and legal staff, to ensure document storage structure is correctly configured with appropriate access controls, metadata schemas, and cross-reference linkages;
-- The Procurement Department, to support training and change management as staff transition from current informal practices to the rationalized template ecosystem.
+**Event-type-specific dynamic forms.** Each of the City's eight-plus distinct event types will have its own form schema defined in the workflow configuration. Forms are rendered dynamically from schema definitions, not hardcoded. When OCRSE needs to add a new event type or modify an existing one's required fields, a City system administrator can make that change through the administrative interface without developer involvement. This eliminates the uniform PDF bottleneck described in requirement F-008.
 
-Implementation is explicitly bounded by the contract scope: TWC will not procure or configure hardware, network infrastructure, or physical installation. Our implementation role is the translation of document content and structure into system-ready formats, and advisory support for system configuration decisions.
+**Conditional logic.** The `civitas-workflow` engine evaluates applicant inputs in real time and adjusts which fields are required, which document uploads are triggered, and which departmental routing queues receive the application—all without a page reload. Conditions are expressed as composable rule objects (e.g., `expected_attendance > 1000 AND alcohol_permit = true → trigger_route: fire_marshal_review`). The full condition library is documented and extensible.
 
-### 5.2 Alignment with City Code and Charter Updates
+**Concurrent application types and surge capacity.** The system handles multiple concurrent application types by design—each type is an independent workflow definition sharing the same application, database, and infrastructure. At 1,700-plus annual applications (requirement F-006), the system operates well within comfortable margins; our L&I engagement processes comparable volumes with substantially more complex business logic. See Section 4 for specific performance benchmarks.
 
-The City has identified that document implementation must align with OPAL ERP implementation and City Code/Charter update timelines. TWC will maintain a standing agenda item in weekly project meetings to track the status of any pending Code or Charter changes that affect document content, and will sequence implementation activities to avoid loading outdated content into live systems. Where Code or Charter changes are anticipated but not yet enacted, we will prepare contingency clause variants and flag them for activation upon enactment.
+**Post-submission editing.** Applicants may upload additional documents and edit permitted fields after submission, subject to workflow state and role-based permission rules. All edits are versioned and audit-logged (F-004, F-021).
 
-### 5.3 Final Executive Report and Presentation
+### 3.2 Status Tracking and Communication (F-009 through F-013)
 
-At the conclusion of Phase IV, TWC will deliver the **Final Executive Report and Presentation** — the third required formal report. This report will document:
+**Real-time status dashboard.** Application status is surfaced on both the applicant-facing portal and the City staff dashboard. Status transitions (submitted, under review, additional information requested, approved, denied, permit issued) are logged with timestamps and displayed in a human-readable timeline view. No applicant needs to call OCRSE to learn where their application stands.
 
-- The complete rationalized document and template ecosystem delivered;
-- The clause library architecture and governance model;
-- System implementation outcomes and any open items;
-- Ongoing maintenance recommendations, including governance roles, review cadences, and the process for adding or modifying clauses as legal requirements evolve;
-- A summary of all Quick Wins identified and implemented during the engagement.
+**Integrated messaging.** A structured messaging thread is attached to each application record. Messages sent through the portal are logged to the application record, visible to all authorized parties, and trigger email notifications to recipients. This is not a general email relay—it is a persistent, auditable record of every communication associated with an application, satisfying F-010 and F-012.
 
-The presentation will be prepared for an executive audience and delivered in person at City Hall, with materials formatted for publication if the City elects to share them publicly.
+**Interdepartmental coordination.** City staff from different departments are granted scoped access to applications relevant to their review role. Internal comment threads (separate from applicant-visible messaging) allow Fire Marshal, Streets Department, Parks, and other reviewing bodies to communicate without leaving the system. Task assignments, due dates, and completion status are tracked per review step (F-011, F-020).
+
+**Single access point.** The applicant portal presents all applications, permits, messages, and invoices in one authenticated dashboard, regardless of which City departments are involved in review. Applicants do not need to navigate to separate agency portals (F-013).
+
+### 3.3 Dashboards, Calendars, and Reporting (F-014 through F-018)
+
+**Applicant dashboard.** Each applicant sees a personalized dashboard showing all their applications (active and historical), current status, pending action items, outstanding invoices, and issued permits. Applications are grouped by event type and filterable by date range and status.
+
+**Staff dashboard.** City personnel see a configurable dashboard showing their assigned review queue, upcoming deadlines, recently submitted applications, and flagged items requiring attention. Role and department filters allow each staff member to scope their view.
+
+**Calendar view.** A shared event calendar—visible to City staff, and in a filtered form to applicants—shows scheduled events by date, location, and type. The calendar is built on a lightweight open-source component (FullCalendar) that renders consistently across devices and passes accessibility audit. Conflicts (same venue, same date) are surfaced automatically as soft warnings during application intake.
+
+**Reporting.** We implement a two-layer reporting architecture:
+
+- *Predefined reports* are implemented as named SQL views exposed through the Django admin and a reporting module, downloadable as CSV or PDF. Standard reports will cover application volumes by type and date, average processing time by event type, departmental review turnaround, outstanding payment aging, and permit issuance rates.
+- *Ad hoc reporting* is provided through an embedded Metabase instance (open-source, MIT-licensed) connected to a read-only reporting replica of the PostgreSQL database. City staff with the analyst role can build and save custom reports without SQL knowledge. Power users can write SQL directly against the reporting replica.
+
+This architecture satisfies F-016, F-017, and F-018 and ensures that reporting queries do not contend with transactional application traffic.
+
+### 3.4 Workflow and Access Control (F-019 through F-021)
+
+User roles are implemented using Django's built-in permission framework extended with object-level permissions. We propose the following baseline role taxonomy, subject to refinement during discovery:
+
+| Role | Access Scope |
+|------|-------------|
+| Applicant | Own applications, messages, invoices, issued permits |
+| OCRSE Staff | All applications, full messaging, workflow actions |
+| Reviewing Department Staff | Applications routed to their department queue; internal comments |
+| OCRSE Administrator | Workflow configuration, user management, report administration |
+| City IT Administrator | System configuration, audit logs, integration management |
+| Read-only Analyst | Reporting replica access; no write permissions |
+
+Role assignments are managed by OCRSE Administrators without developer involvement. All permission changes are audit-logged.
+
+### 3.5 Payments and Invoicing (F-022, F-023)
+
+Payment integration will connect to the City's existing payment processor via its published API. We have integrated with City of Philadelphia payment infrastructure in our L&I engagement and will apply the same integration pattern here. Invoices are generated by the system based on configurable fee schedules tied to event type and application attributes. Applicants receive invoices through the portal and via email notification, and can pay online through the integrated payment flow. Invoice status (outstanding, paid, partially paid, waived) is reflected in real time on both applicant and staff dashboards. Payment receipts are stored against the application record and are available for download by both parties.
 
 ---
 
-## 6. Reporting, Meetings, and Communication
+## 4. Performance Standards
 
-### 6.1 Weekly Project Team Meetings
+The following performance commitments are based on the City's current hardware profile as described in Appendix K and in conversations with City IT during the pre-proposal period. Final benchmarks will be validated against the City's actual environment during the configuration and testing phase, and documented in the Test Plan deliverable (PS-006).
 
-TWC will attend and actively contribute to weekly project team meetings per the City Project Manager's schedule and format requirements. Where the City Project Manager delegates agenda preparation to TWC,
+| Metric | Committed Standard | Measurement Basis |
+|--------|-------------------|-------------------|
+| Page response time (median, authenticated) | ≤ 800ms | 50th percentile under normal load |
+| Page response time (95th percentile) | ≤ 2,000ms | Under simulated peak load |
+| Transactions per minute (TPM) | ≥ 500 concurrent form submissions | Load test with 500 simultaneous users |
+| Server Disk I/O | ≤ 70% sustained utilization under peak load | Measured via iostat during load test |
+| Page swapping | 0 swap events under normal operating load | Requires ≥ 16GB RAM on application server; see Section 5.1 |
+| System availability (MTTF) | ≥ 2,628 hours (target: 99.5% uptime) | Rolling 12-month measurement |
+| Mean time to repair (MTTR) | ≤ 4 hours for Priority 1 incidents | Per maintenance SLA in Section 7 |
+| Bandwidth utilization | ≤ 2 Mbps sustained per 100 concurrent users | Measured at network perimeter |
+
+**Performance assumptions.** These standards assume: (a) the application server has at minimum 8 CPU cores and 16GB RAM; (b) the database server has at minimum 4 CPU cores, 16GB RAM, and SSD-backed storage; (c) network latency between application and database servers is ≤ 1ms (co-located in same data center or server room); and (d) the City's internet connection provides ≥ 100 Mbps symmetric bandwidth for public-facing traffic. Section 5.1 below identifies the specific server configuration required to meet these standards. If the City's current equipment does not meet these baselines, we identify the necessary upgrades.
+
+---
+
+## 5. Infrastructure Requirements
+
+### 5.1 Server Requirements
+
+The following table specifies the minimum server configuration required to meet the performance standards in Section 4. No hardware will be purchased under this contract (T-004); this table is provided so that the City's IT division can confirm existing equipment meets requirements or plan any necessary upgrades.
+
+| Server Role | Minimum CPU | Minimum RAM | Storage | Notes |
+|-------------|------------|------------|---------|-------|
+| Application server (primary) | 8 cores | 16 GB | 100 GB SSD (OS + app) | Runs Django, Celery workers, nginx |
+| Database server | 4 cores | 16 GB | 500 GB SSD (data) | PostgreSQL 16; SSD required for I/O standards |
+| Redis / cache server | 2 cores | 8 GB | 20 GB | May be co-located with app server in lower-volume configs |
+| Reporting replica | 4 cores | 8 GB | 500 GB SSD | Read-only PostgreSQL replica; may be
 
 # Pricing
 
 # Section 7: Cost Proposal
 
-## Tech Week Consortium — Fixed-Price Cost Proposal
-### City of Philadelphia OPAL Project: Supply Chain Strategy Development and Document Rationalization
+## Tech Week Consortium — Pricing & Cost Proposal
+### City of Philadelphia Special Event Permitting Software Solution | Project Intake #1140
 
 ---
 
-### 7.1 Pricing Overview and Approach
+## 7.1 Pricing Philosophy and Assumptions
 
-Tech Week Consortium (TWC) submits the following fixed-price cost proposal in full compliance with the pricing requirements of this RFP. All costs for performance of the Scope of Work described in Sections 3 through 5 of this proposal are included in the line-item budget below. No additional charges will be invoiced beyond the amounts listed herein.
+Tech Week Consortium (TWC) submits this as a **fixed-price proposal** in full compliance with RFP requirement C-001. All costs necessary to deliver a complete, operational, and fully accepted Special Event Permitting Software Solution are itemized below, including integration, project management, software development, testing, installation, maintenance, training, and all other work within scope.
 
-This proposal reflects:
+**Global Pricing Assumptions**
 
-- **All-inclusive fixed pricing** — employee compensation, fringe benefits, communication, printing, administrative expenses, travel (at City-approved rates), project management, reporting, and all deliverable development costs are embedded in each line item. No costs are held outside this schedule.
-- **No time-and-materials or cost-plus components** — this is a firm fixed-price proposal in accordance with RFP Section 8 requirements.
-- **Milestone-based invoicing** — TWC will invoice upon successful completion and City acceptance of each phase or milestone as defined below. No advance payments or retainers are requested.
-- **Not-to-exceed maximum** — the total contract value shall not exceed **$487,500**, inclusive of all optional renewal periods if exercised at the rates stated in Section 7.5.
+The following assumptions underlie all line-item prices. Per RFP requirement C-008, any material deviation from these assumptions identified during contract negotiation or project initiation will be subject to a written change-order process with pricing disclosed at the rates established in Section 7.6 below.
 
----
-
-### 7.2 Summary Cost Table
-
-| Line | Phase / Deliverable | Milestone Trigger for Invoice | Fixed Price |
-|------|--------------------|-----------------------------|-------------|
-| 1.0 | **Phase I — Initiation** | City acceptance of Phase I deliverables (target: June 2026) | $97,500 |
-| 1.1 | Document inventory and validation | Submission of validated document inventory | $22,000 |
-| 1.2 | Gap and redundancy analysis | Submission of gap/redundancy analysis report | $18,000 |
-| 1.3 | Document rationalization plan and storage structure design | Submission of rationalization plan | $24,500 |
-| 1.4 | Template index (existing / requiring revision / new) | Submission of categorized template index | $16,000 |
-| 1.5 | Attachment, exhibit, and associated document collection and rationalization | Submission of consolidated attachment inventory | $9,000 |
-| 1.6 | Phase I Executive Report and Presentation | City acceptance of Phase I executive report | $8,000 |
-| | | | |
-| 2.0 | **Phase II — Design** | City acceptance of Phase II deliverables (target: early September 2026) | $122,500 |
-| 2.1 | Template structure model development (all 19 template categories) | Submission of template structure models | $38,000 |
-| 2.2 | Clause library framework design (fixed and variable clause architecture) | Submission of clause library framework | $32,500 |
-| 2.3 | Existing systems survey and assessment (PHLContracts, ACIS, FAMIS, ADPICs, SharePoint, shared drives, OnePhilly) | Submission of systems assessment report | $21,000 |
-| 2.4 | Workday ERP / Strategic Sourcing clause library suitability assessment | Submission of Workday suitability assessment | $14,000 |
-| 2.5 | Alternative and integration recommendations for clause library functionality | Submission of system recommendations report | $9,000 |
-| 2.6 | Phase II Executive Report and Presentation | City acceptance of Phase II executive report | $8,000 |
-| | | | |
-| 3.0 | **Phase III — Creation** | City acceptance of Phase III deliverables (target: late December 2026) | $163,000 |
-| 3.1 | Draft clause library content — all template categories (19 categories, federal and local variants as applicable) | Submission of draft clause library | $62,000 |
-| 3.2 | New and revised document/template generation | Submission of complete template library | $48,000 |
-| 3.3 | Standard alternate and fallback clause content | Submission of alternate/fallback clause library | $22,500 |
-| 3.4 | Regenerated document index (inclusive of all new and revised templates) | Submission of updated document index | $12,500 |
-| 3.5 | Phase III Executive Report and Presentation | City acceptance of Phase III executive report | $10,000 |
-| 3.6 | Monthly milestone reports (Months 7–12, bundled) | Delivery of each monthly report | $8,000 |
-| | | | |
-| 4.0 | **Phase IV — Implementation** | City acceptance of Phase IV deliverables (target: January–April 2027) | $80,000 |
-| 4.1 | Implementation of rationalized documents, templates, and recommended systems | Confirmed deployment and City sign-off | $38,000 |
-| 4.2 | OPAL ERP alignment activities and coordination | Completion of ERP alignment deliverables | $18,500 |
-| 4.3 | City Code and Charter update alignment activities | Completion of Code/Charter alignment review | $12,000 |
-| 4.4 | Staff knowledge transfer and documentation | Delivery of knowledge transfer materials | $7,500 |
-| 4.5 | Final Executive Report and Presentation | City acceptance of final report | $4,000 |
-| | | | |
-| 5.0 | **Project Management and Ongoing Reporting (Months 1–12)** | Monthly, concurrent with each phase | $24,500 |
-| 5.1 | Weekly project team meeting preparation, facilitation, and notes | Ongoing; invoiced monthly in arrears | $12,000 |
-| 5.2 | Monthly milestone and progress reports (Months 1–6) | Delivery of each monthly report | $6,000 |
-| 5.3 | Quick Win identification, documentation, and reporting (as identified) | As reported; no minimum invoice threshold | $4,500 |
-| 5.4 | Schedule maintenance (baseline, actual, and projected Gantt) | Ongoing; invoiced with each monthly report | $2,000 |
-| | | | |
-| | **BASE CONTRACT TOTAL (12-Month Initial Term)** | | **$487,500** |
+1. **Volume baseline.** Pricing assumes up to 2,000 special event permit applications annually (inclusive of the RFP's stated 1,700+ baseline plus a 15% surge buffer). Volumes exceeding 2,000 applications per year will be reviewed at each contract anniversary; material volume increases may trigger a renegotiation of the maintenance line items only.
+2. **On-premises installation.** All software is installed on City-owned equipment and networks per T-001. TWC has reviewed the City's current infrastructure profile as described in the RFP and related appendices. Hardware, networking equipment, and physical installation services are explicitly excluded from this proposal per T-004.
+3. **City responsibilities.** Pricing assumes the City will provide: timely access to subject-matter experts and decision-makers during discovery and configuration phases; access to existing City systems (billing/payment processor, GIS, business licensing databases) within 10 business days of project kickoff; and a dedicated project manager with authority to approve deliverables.
+4. **Third-party systems.** Integration costs below cover API-based connections to up to four (4) distinct City systems. Integration with additional systems beyond four will be priced at the rates in Section 7.6.
+5. **No sales tax.** Per C-004, all prices exclude federal, state, and local sales/use taxes and federal excise taxes.
+6. **Source code and licensing.** All custom software developed under this contract is delivered to the City with full source code and documentation per SC-001. Proprietary components of TWC's `civitas` framework are licensed to the City under a perpetual, royalty-free license and deposited into escrow per SC-002 through SC-004.
+7. **Accessibility audit.** TWC's standard practice includes a third-party WCAG 2.2 AA audit by a certified accessibility vendor prior to Final Acceptance. This audit is included in the base price and is not invoiced as a separate cost to the City.
+8. **Currency and validity.** All prices are in U.S. dollars. Per A-007, this proposal and all prices within it are binding for 180 days from the submission date of March 17, 2026.
 
 ---
 
-### 7.3 Line-Item Cost Notes and Assumptions
+## 7.2 Base System Software
 
-The following notes clarify the scope and assumptions embedded in each major line item. Any material change to these assumptions that is directed by the City's Project Manager and falls outside the defined scope will be addressed through the City's formal change-order process.
+These costs cover the configuration, customization, and deployment of TWC's `civitas`-based permitting platform to meet all functional requirements (F-001 through F-026) and all technical requirements (T-001 through T-037).
 
-**Line 1.1 — Document Inventory and Validation**
-Includes staff time for document collection across all identified repositories (PHLContracts, ACIS, FAMIS, ADPICs, SharePoint, shared drives, OnePhilly), structured interviews with Procurement and Law Department staff, and preparation of the validated inventory deliverable. Assumes TWC will receive read access to all relevant systems within ten (10) business days of contract execution.
-
-**Line 1.3 — Document Rationalization Plan and Storage Structure Design**
-Includes design of a searchable storage structure supporting retrieval by document type, department, expiry date, creation date, and revision history, as well as cross-reference capability. Does not include procurement, licensing, or configuration of any software system; system recommendations are addressed in Phase II.
-
-**Line 2.1 — Template Structure Model Development**
-Covers all nineteen (19) template categories identified in RFP Section 2.2, including both federal and local variants where applicable (Equipment, IT Hardware, IT Software, IT Services, Construction, AE, CM, Professional Services, HHS), and local-only variants (Goods, Vehicle, Benefits, Maintenance/Site Services, Artist, Staff Augmentation, RFQ, and three NDA variations). Parallel development tracks will be used to meet the early September 2026 target.
-
-**Line 2.3 — Existing Systems Survey and Assessment**
-Includes structured review of all eight systems identified in RFP Section 4.1, assessment of current storage and search functionality, and identification of gaps relative to the document management requirements developed in Phase I. Does not include any system configuration, data migration, or software licensing.
-
-**Line 2.4 — Workday ERP / Strategic Sourcing Clause Library Suitability Assessment**
-Includes review of Workday Procurement, Finance, and Strategic Sourcing module configurations as made available by the City; assessment of the Workday Strategic Sourcing clause library functionality against the clause library framework developed in Line 2.2; and a written suitability finding with rated alternatives.
-
-**Line 3.1 — Draft Clause Library Content**
-The largest single deliverable in the engagement. Covers clause drafting across all template categories, including fixed and variable clause structures, for all applicable federal and local variants. Assumes that City subject-matter experts (Procurement and Law staff) will be available for structured review sessions of no fewer than two (2) hours per week during Phase III to validate legal sufficiency and policy alignment. Delays attributable to City review availability may require schedule adjustment under the change-order process.
-
-**Line 3.3 — Standard Alternate and Fallback Clause Content**
-Includes one (1) standard alternate and one (1) fallback version for each negotiable clause type identified during the Phase II clause framework. Additional alternates or fallbacks beyond this scope may be added via change order.
-
-**Line 4.2 — OPAL ERP Alignment Activities**
-Includes coordination with the City's OPAL implementation team to align template and document deployment sequencing with Workday go-live timelines. Does not include any Workday configuration, system integration development, or ERP implementation support. TWC will participate in joint coordination meetings but is not responsible for OPAL program schedule delays.
-
-**Line 5.3 — Quick Win Identification and Reporting**
-TWC will document and report Quick Wins as they are identified throughout all phases. Each Quick Win report will include: description, cost to implement, time to implement, expected improvement, and a proposed measurement method, in accordance with RFP Section 5.3. This line item reflects the staff time allocated to Quick Win documentation and reporting; it does not include implementation of any Quick Win, which would be addressed separately if within scope or via change order if outside it.
+| Line | Item | Description | Fixed Price |
+|------|------|-------------|-------------|
+| SW-01 | Core Permitting Platform License (Perpetual) | Perpetual, royalty-free license for the City of Philadelphia to the `civitas` permitting module, including all source code and documentation. Covers all eight (8) event types (F-007), dynamic conditional-logic workflows (F-005), multi-application hosting (F-001), and permit issuance (F-002). | $185,000 |
+| SW-02 | Dynamic Application Engine | Configuration and customization of event-type-specific application forms, eliminating the uniform PDF format (F-008). Includes conditional field logic, required-documentation routing, and post-submission editing controls (F-004, F-005). | $42,000 |
+| SW-03 | Status Tracking & Messaging Module | Real-time applicant and City-personnel status dashboards (F-009, F-015); direct applicant-to-City messaging with full retained history (F-010); internal interdepartmental collaboration tools (F-011); automated status notifications replacing manual email (F-012); single-access-point applicant portal (F-013). | $38,000 |
+| SW-04 | Dashboard, Calendar & Reporting Module | Centralized event calendar and unified application dashboard (F-014, F-015); KPI and operational reporting engine supporting predefined and ad hoc reports (F-016, F-017); applicant data analysis tools (F-018). | $34,000 |
+| SW-05 | Workflow & Access Control Engine | Multi-role permission and access-control configuration (F-019); centralized cross-departmental task management (F-020); application and workflow archiving and audit-trail system (F-021). | $28,000 |
+| SW-06 | Payments & Invoicing Module | Payment processor integration supporting seamless online payment (F-022); invoice generation and management tools (F-023). | $22,000 |
+| SW-07 | Service Request / Task Generation Engine | Automated generation of service requests and tasks based on applicant inputs (F-003), routed to appropriate City departments. | $18,000 |
+| | **Base System Software Subtotal** | | **$367,000** |
 
 ---
 
-### 7.4 Costs Included in the Base Price
+## 7.3 Optional Add-Ons
 
-The following cost categories are fully embedded in the line items above and will not be invoiced separately under any circumstances:
+The following optional capabilities fall outside the baseline RFP scope but may be of value to OCRSE. Each is described, priced, and justified below per C-003. None of these are required for the base system to meet all stated RFP requirements.
 
-| Cost Category | Treatment |
-|---------------|-----------|
-| Staff compensation and fringe benefits (all TWC members assigned to this engagement) | Included in all phase line items |
-| Communication (telephone, video conferencing, secure file transfer) | Included in project management line |
-| Printing and document production | Included in relevant phase line items |
-| Administrative and back-office expenses | Included in project management line |
-| Local travel within Philadelphia metropolitan area | Included; no separate travel line will be invoiced |
-| Out-of-area travel, if required | Not anticipated; if directed by City, will be invoiced at IRS standard mileage and GSA per diem rates, not to exceed $2,500 per event, subject to prior written City approval |
-| Project management overhead | Included in Line 5.0 |
-| Third-party accessibility audit (where applicable to any UI deliverable) | Included; TWC policy — not separately invoiced |
-| Report production, formatting, and presentation design | Included in relevant phase and reporting line items |
-
-> **Note on Hardware and Equipment:** Consistent with RFP Section 1.6, no computer hardware, network equipment, or physical installation services are included in or contemplated by this proposal.
+| Line | Item | Description | Rationale for Exclusion from Base | Optional Price |
+|------|------|-------------|-----------------------------------|----------------|
+| OPT-01 | Public-Facing Open Data API | A publicly documented REST API exposing anonymized event permit data (dates, event types, geographic footprints) for use by journalists, researchers, and civic technologists. Modeled on TWC's Camden County open-data delivery. | RFP does not require public data publication; internal reporting (F-016–F-018) is fully covered in the base system. City may wish to evaluate public data disclosure implications before committing. | $24,000 |
+| OPT-02 | Spanish / Mandarin / Vietnamese Application Interface | Full translation of the applicant-facing portal into Spanish, Mandarin, and Vietnamese, with language-specific help text and error messages. TWC has native speakers and prior translation infrastructure from the School District engagement. | RFP does not specify multilingual requirements. Strongly recommended for equity and constituent access, but inclusion is a City policy decision. | $31,000 |
+| OPT-03 | GIS Map-Based Event Footprint Tool | An interactive map interface allowing applicants to draw event boundaries, identify street closures, and flag proximity conflicts with other permitted events, integrated with City GIS systems. | RFP identifies GIS integration (F-024) as a required integration point, which the base system supports via API. The map-drawing tool is an enhanced UX layer beyond the stated requirement. | $19,500 |
+| OPT-04 | Automated Conflict Detection Engine | Algorithmic review of incoming applications for date, location, and resource conflicts with existing approved events; generates alerts for City reviewers. | Requires City policy decisions on conflict-resolution rules before it can be configured. Recommended for Year 2 after operational patterns are established. | $27,000 |
 
 ---
 
-### 7.5 Optional Renewal Periods
+## 7.4 Professional Services
 
-The City may exercise up to four (4) one-year optional extensions at the rates below. Renewal pricing is fixed at the time of this proposal and will not escalate during the base term. Extensions beyond Year 2 include a 3% annual adjustment to reflect labor cost changes, consistent with the Philadelphia CPI-U trend.
+### 7.4.1 Implementation Services
 
-| Option Period | Scope Description | Annual Fixed Price |
-|---------------|------------------|--------------------|
-| Option Year 1 (June 2027 – May 2028) | Ongoing document maintenance, clause library updates, system advisory, and annual review cycle | $98,500 |
-| Option Year 2 (June 2028 – May 2029) | Same as Option Year 1 | $101,455 |
-| Option Year 3 (June 2029 – May 2030) | Same as Option Year 1 | $104,499 |
-| Option Year 4 (June 2030 – May 2031) | Same as Option Year 1 | $107,634 |
+All implementation services are performed exclusively by TWC staff members — no subcontracting layer. Pricing covers all tasks from discovery through Final Acceptance, including the 30-consecutive-calendar-day Reliability Period (PS-007).
 
-> Option year scope assumes no major re-scoping of the document library. If significant City Code or Charter changes, new ERP modules, or other material scope drivers emerge during an option year, TWC will present a revised scope and fixed price for City approval prior to the option exercise date.
+| Line | Item | Description | Fixed Price |
+|------|------|-------------|-------------|
+| PS-01 | Discovery & Requirements Validation | Structured discovery sessions with OCRSE and all relevant City departments; validation and refinement of the requirements documented in this RFP; production of a finalized Statement of Work suitable for contract incorporation (PS-002). Estimated 4 weeks. | $28,000 |
+| PS-02 | System Architecture & Design | Infrastructure topology design (T-015, T-016); workflow-processing plan (T-017); reporting infrastructure design (T-018); disaster recovery plan (T-019); bandwidth and performance documentation (T-020–T-024). Production of all required technical documentation per Appendix K (T-025–T-030). Estimated 3 weeks. | $21,000 |
+| PS-03 | Software Configuration & Custom Development | Configuration, customization, and integration development for all base system modules (SW-01 through SW-07). Includes version control, error correction, and pre-delivery unit and integration testing (PS-001). Estimated 10 weeks. | $84,000 |
+| PS-04 | Third-Party System Integration | API-based integration with up to four (4) City systems, including payment processor, GIS, and business licensing database (F-024, F-025, F-026). Includes integration testing and documentation. Estimated 4 weeks, overlapping with PS-03. | $36,000 |
+| PS-05 | City IT Standards Compliance & Security Review | Validation of compliance with all Appendix K standards (T-025–T-030); WCAG 2.2 AA third-party audit (included at no additional cost; see Section 7.1 assumption 7); Century Date Standard conformance testing (T-037); SOC 2 Type II and SOC 1 audit documentation preparation (T-031). Estimated 2 weeks. | $14,000 |
+| PS-06 | User Acceptance Testing & Reliability Period | Execution of Conditional and Final Acceptance test plans (PS-006); support for City-led UAT; management of and support through the 30-day Reliability Period (PS-007). Estimated 6 weeks. | $22,000 |
+| PS-07 | Project Management | Dedicated project manager throughout the engagement; two-week iteration cadence with public roadmap; milestone tracking; risk management; status reporting to OCRSE (PS-001, PS-003). Estimated duration: full project lifecycle (~6 months). | $31,000 |
+| PS-08 | Deployment & Go-Live Support | Production deployment on City infrastructure; go-live cutover planning and execution; hypercare support for the first 30 days post-launch (PS-007, T-023). | $12,000 |
+| | **Implementation Services Subtotal** | | **$248,000** |
 
----
+### 7.4.2 Training Services
 
-### 7.6 Not-to-Exceed Maximum Compensation
+Per PS-009 through PS-013 and Appendix E, training services are priced as separate line items below.
 
-| Contract Component | Not-to-Exceed Amount |
-|--------------------|---------------------|
-| Base contract (12-month initial term) | $487,500 |
-| Option Year 1 | $98,500 |
-| Option Year 2 | $101,455 |
-| Option Year 3 | $104,499 |
-| Option Year 4 | $107,634 |
-| **Full five-year contract ceiling (all options exercised)** | **$899,588** |
-
----
-
-### 7.7 Invoicing and Payment Schedule
-
-TWC will submit invoices upon completion and written City acceptance of each milestone event identified in Section 7.2. Invoices will be submitted to the City's Project Manager and will include:
-
-- A reference to the applicable contract line item and milestone
-- A brief narrative describing the completed deliverable
-- Confirmation that the deliverable has been accepted or a notation of any outstanding acceptance items
-
-TWC does not require advance payment, deposits, or retainers. We do not anticipate requesting any payments in advance of milestone completion.
+| Line | Item | Description | Fixed Price |
+|------|------|-------------|-------------|
+| TR-01 | Training Needs Assessment & Plan | Identification of all City personnel user groups; development of a detailed Training Plan specifying format, schedule, audience segments, scope, assumptions, and City responsibilities (PS-011). | $4,500 |
+| TR-02 | City Administrator Training | In-person training for system administrators covering configuration management, user-role administration, workflow adjustments, and reporting. Up to 3 sessions of up to 12 participants each. | $9,000 |
+| TR-03 | OCRSE Staff Training — Application Processing | In-person and recorded training for OCRSE permit reviewers covering application processing, task management, interdepartmental coordination tools, and communication features. Up to 4 sessions of up to 15 participants each. | $11,000 |
+| TR-04 | Reporting & Analytics Training | Hands-on training for designated City reporting users covering predefined report generation, ad hoc report building, dashboard configuration, and data export (F-016–F-018). Up to 2 sessions of up to 10 participants each. | $6,500 |
+| TR-05 | Training Materials Production | Comprehensive user manuals/guides (role-specific), recorded video tutorials for each training module, FAQ documents, and a quick-reference card for each user role (PS-010). Delivered in editable formats so the City can update them independently. | $8,000 |
+| TR-06 | Applicant Onboarding Support | Design and production of applicant-facing help documentation, portal walkthrough guides, and a "how to apply" video tutorial. Coordination with OCRSE on public rollout communications (PS-013). | $5,500 |
+| TR-07 | Post-Go-Live Office Hours (90 Days) | Twelve (12) one-hour virtual office-hour sessions available to City staff during the first 90 days post-launch for questions, troubleshooting guidance, and workflow refinement. | $4,000 |
+| | **Training Services Subtotal** | | **$48,500** |
 
 ---
 
-### 7.8 Alternates and Options Not Included in the Base Price
+## 7.5 Documentation
 
-The following potential services were considered during proposal development but are not included in the base fixed price. They are presented here for the City's consideration in accordance with RFP Section 8.6.
-
-| # | Description | Rationale for Exclusion | Indicative Cost |
-|---|-------------|------------------------|-----------------|
-| A-1 | Configuration or procurement of a third-party clause library software system | The RFP scope calls for assessment and recommendation, not procurement or implementation. If the City elects to procure and implement a recommended system, TWC can provide configuration support under a separate engagement. | $35,000–$65,000 depending on selected platform |
-| A-2 | Expanded staff training program (beyond knowledge transfer in Line 4.4) | The base scope includes knowledge transfer documentation and one facilitated training session. A structured, multi-session training curriculum for City Procurement and Law staff is excluded. | $12,000–$18,000 for a 3-session curriculum |
-| A-3 | Spanish, Mandarin, and Vietnamese translation of select public-facing procurement documents | Not requested in the RFP scope. TWC has in-house capacity for community engagement translation; procurement document translation would draw on the same capability. | $4,500–$9,000 per document set per language |
-| A-4 | Independent accessibility audit of any document management system UI implemented under Phase IV | TWC includes third-party accessibility audits for all UI deliverables we build. For third-party systems recommended and implemented under Phase IV, an independent audit would be an additional cost. | $6,500–$11,000 depending on system |
+| Line | Item | Description | Fixed Price |
+|------|------|-------------|-------------|
+| DOC-01 | Technical System Documentation | Architecture diagrams, data dictionaries, API specifications, integration documentation, and infrastructure runbooks. Delivered in editable formats with City ownership (SC-001). | $8,000 |
+| DOC-02 | Source Code & Escrow Documentation | Complete, annotated source code for all custom deliverables; escrow account setup and initial deposit per SC-002 through SC-004; ongoing escrow update procedures documented. | $3,500 |
+| DOC-03 | Accessibility Conformance Reports (ACRs) | Public-facing WCAG 2.2 AA conformance reports for all shipped application interfaces, following TWC's standard ACR publication practice. | Included in PS-05 |
+| | **Documentation Subtotal** | | **$11,500** |
 
 ---
 
-### 7.9 Pricing Certification
+## 7.6 Software Maintenance Agreement
 
-Tech Week Consortium certifies that:
+Per M-001 through M-007, maintenance and support services are priced below with Year 1 as a required deliverable and Years 2–5 as separately identified line items. All maintenance is provided on a turnkey basis (M-002); TWC serves as the sole point of contact for all system elements. TWC guarantees availability of maintenance and support for a minimum of five (5) years from Final Acceptance (M-004).
 
-1. This cost proposal represents a firm, fixed-price offer valid for ninety (90) days from the proposal submission date of April 13, 2026.
-2. All prices have been independently determined without coordination, consultation, or agreement with any other proposer responding to this RFP.
-3. No component of this proposal is contingent on time-and-materials or cost-plus billing.
-4. All costs for performance of the described scope of work are reflected in the line items above; no costs are deferred to a future pricing action within the base contract term.
-5. TWC acknowledges that the contract will include a not-to-exceed maximum compensation amount equal to the base contract total stated in Section 7.6, and that any work outside the defined scope requires a written, City-approved change order before work commences.
+**Included in all maintenance years:**
+- Sole-point-of-contact support desk, business hours (Monday–Friday, 8 AM–6 PM Eastern) with emergency on-call for Severity 1 issues 24/7/365
+- Best-efforts error and defect correction within 48 hours of notification (M-006)
+- All software updates, patches, and minor enhancements
+- Annual performance review and capacity planning
+- Ongoing conformance with all City IT standards (T-025–T-030) as those standards evolve
+- Up to four (4) hours per month of City-initiated configuration changes executable by City personnel with TWC guidance; changes requiring development effort beyond this are quoted at the rates in Section 7.6 Supplemental
+
+**Problem severity classification and response commitments** (per M-005):
+
+| Severity Level | Definition | Initial Response | Targeted Fix / Workaround |
+|----------------|------------|-----------------|---------------------------|
+| **Severity 1 — Critical** | System unavailable or data loss imminent; no workaround available | 1 hour (24/7) | 4 hours; on-site if required |
+| **Severity 2 — High** | Core functionality impaired; workaround available but burdensome | 4 business hours | 48 hours (M-006) |
+| **Severity 3 — Medium** | Non-critical feature impaired; workaround available | 1 business day | Next scheduled release (≤30 days) |
+| **Severity 4 — Low** | Cosmetic or minor issue; minimal operational impact | 2 business days | Scheduled at mutual discretion |
+
+| Line | Item | Year | Fixed Annual Price |
+|------|------|------|--------------------|
+| MA-01 | Software Maintenance & Support — Year 1 | Commences upon Final Acceptance | $52,000 |
+| MA-02 | Software Maintenance & Support — Year 2 | | $54,080 |
+| MA-03 | Software Maintenance & Support — Year 3 | | $56,243 |
+| MA-04 | Software Maintenance & Support — Year 4 | | $58,493 |
+| MA-05 | Software Maintenance & Support — Year 5 | | $60,833 |
+| | **Maintenance Agreement Subtotal (Years 1–5)** | | **$281,649** |
+
+*Years 2–5 reflect a 4% annual escalator, consistent with the Philadelphia-area CPI trend over the prior three years. The Year 1 rate is fixed regardless of CPI.*
 
 ---
 
-*Pricing contact: R. Park, Procurement Specialist | proposals@techweekconsortium.coop | 215-555-0119*
+## 7.7 Warranty
 
-*Tech Week Consortium | 1234 Market Street, Suite 800 | Philadelphia, PA 19107*
+Per W-001 through W-006, warranty coverage is priced as a separate line item. Year 1 warranty is required; Years 2 and 3 are offered as preferred options per W-003. All warranty obligations are fulfilled by TWC as

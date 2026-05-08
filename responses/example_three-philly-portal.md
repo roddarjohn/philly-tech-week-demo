@@ -1,60 +1,123 @@
-# Tech Week Consortium — Proposal for OPAL Supply Chain Strategy Development and Document Rationalization
-**City of Philadelphia | RFP Response | Submitted via eContract Philly | April 13, 2026**
+# Tech Week Consortium — Proposal for City of Philadelphia Special Event Permitting Software Solution
+**Project Intake #1140 | Submitted by Tech Week Consortium | March 17, 2026**
 
 ---
 
-## Who We Are
+## Executive Summary
 
-Tech Week Consortium (TWC) is a Philadelphia-based, worker-owned civic technology cooperative headquartered three blocks from City Hall. Since 2015 we have delivered durable digital infrastructure for the City of Philadelphia, Pennsylvania state agencies, and regional public institutions — including a decade-long continuous engagement with the Department of Licenses and Inspections. We hold City of Philadelphia M/W/DSBE certification, maintain an active BIRT account and Commercial Activity License, and are fully compliant with Philadelphia's 21st Century Minimum Wage and Equal Benefits standards. We have never received a contract termination, a failed audit, or a debarment action.
-
----
-
-## Our Understanding of the Work
-
-The OPAL project asks a selected consultant to survey a fragmented documentary landscape spread across PHLContracts, ACIS, FAMIS, ADPICs, SharePoint, OnePhilly, and shared drives; rationalize that inventory into a coherent, searchable, cross-referenced structure; build a clause-library-compatible template architecture covering 15–19 procurement categories; develop all new and revised content; and align every work product with Workday Procurement, Finance, and Strategic Sourcing ahead of the FY28 ERP launch. The engagement runs approximately June 2026 – May 2027 on a **fixed-price, milestone-based** contract — exactly the commercial structure we accept and have delivered successfully on more than 80% of our fixed-price engagements without change orders.
+Tech Week Consortium (TWC) is a Philadelphia-based, worker-owned civic technology cooperative with a decade of continuous delivery for the City of Philadelphia and its regional partners. We propose **EventPath**, a configurable, open-source-first special event permitting platform purpose-built to manage the City's ~1,700 annual applications—with surge capacity engineered for the 2026 MLB All-Star Game and FIFA World Cup. This is a fixed-price, turnkey engagement. Every line of code is written by a TWC member; no subcontracting layer exists.
 
 ---
 
-## Our Approach
+## Solution Overview
 
-**Phase I — Initiation (June – August 2026).** We will deploy a structured document inventory methodology against all seven source systems, tagging every artifact by type, department, expiry, creation date, and revision history. We will produce a Document Rationalization Plan with a logical consolidation architecture, a complete Template Index designating each item as *existing*, *existing requiring revision*, or *new*, and a Scope Validation Recommendation before any content development begins. Quick wins — cost, effort, and measurable improvement quantified — will be reported as they are identified, not held until project close.
+EventPath is a **COTS-configurable platform** deployed on the City's existing infrastructure. Its modular architecture supports all twelve mandatory functional requirements simultaneously:
 
-**Phase II — Design (September – October 2026).** We will develop a Template Structure Model for each of the 15–19 procurement categories, with clauses designated fixed or variable and structured for clause-library compatibility. We will evaluate Workday Strategic Sourcing's native clause library against alternatives and deliver a written System Recommendations Report that accounts for the platform's acknowledged limitations and proposes integration paths forward.
-
-**Phase III — Creation (November 2026 – February 2027).** We will draft all new and revised content clause-by-clause, incorporating standard alternate and fallback language, and regenerate the full Document Index upon completion. Every deliverable will be formatted for direct import into Workday modules.
-
-**Phase IV — Implementation Alignment (March – April 2027).** We will finalize all work products, conduct a review cycle with the City's Law and Procurement departments, and deliver the Final Executive Report and Presentation.
-
-Throughout all phases: weekly meetings with the City's Project Manager, written progress reports at each meeting, quarterly executive reports, and a dual-format project schedule (high-level milestone timeline + task-level Gantt chart) updated monthly in baseline/actual/projected format.
-
----
-
-## Why TWC
-
-| Differentiator | Relevance to OPAL |
+| Requirement | EventPath Capability |
 |---|---|
-| **Decade-long City of Philadelphia client** | No onboarding lag; established working relationships with City procurement and technology staff |
-| **ERP and data systems depth** | Delivered lakehouse migrations, ETL pipelines, and Workday-adjacent integrations; we understand what "Workday-compatible formatting" actually requires |
-| **Document and process governance experience** | Pre-RFP advisory and program management work for public agencies; direct experience structuring procurement templates and SOPs |
-| **Fixed-price track record** | >80% of fixed-price engagements closed without change orders; our scope-management discipline protects the City's budget |
-| **Local, in-person presence** | We attend working sessions in person; our Camden satellite office is on the PATCO line |
-| **M/W/DSBE certified Local Business Entity** | Positive evaluation factor; certified and verifiable |
-| **No subcontracting layer** | Every deliverable produced by a TWC member; no eligibility or compliance exposure from subcontractor political contributions |
-| **100% client renewal rate** | Twelve-quarter rolling, for all engagements over six months |
+| Multi-application hosting (A.1.1) | Concurrent permit-type registry; unlimited application schemas |
+| Permit generation & distribution (A.1.2) | Templated PDF/digital permit issuance with audit trail |
+| Service request creation (A.1.3) | Applicant-input-triggered task generation routed to City departments |
+| Post-submission editing & upload (A.1.4) | Version-controlled document amendments with configurable approval gates |
+| Conditional logic workflows (A.1.5) | No-code rule engine for dynamic field visibility, routing, and documentation requirements |
+| Real-time status tracking (A.1.6) | Applicant and staff dashboards with event-driven status push notifications |
+| External communication (A.1.7) | Threaded messaging portal with full history retained per application record |
+| Internal collaboration (A.1.8) | Interdepartmental comment threads, @mentions, and assignment queues |
+| Centralized dashboards & calendars (A.1.9) | Unified OCRSE operations calendar; per-staff and citywide views |
+| Third-party integrations (A.1.10) | REST APIs, SSO (SAML 2.0), webhooks, and scheduled file exchange for payment, GIS, and licensing systems |
+| Invoice management (A.1.11) | Automated invoice generation, fee-schedule configuration, and payment-status reconciliation |
+| Multi-user access & permissions (A.1.12) | Role-based access control with configurable permission tiers per department |
+
+**Scalability for 2026 surge:** EventPath is load-tested to 5× baseline concurrency. We will document tested throughput, response times, and concurrent-user capacity against the City's existing hardware environment and clearly itemize any recommended (but separately procured) network or equipment upgrades with full specifications and cost estimates—at no additional charge to this contract.
+
+**Integrations:** EventPath ships with pre-built connectors for Philadelphia's billing, GIS, and business licensing systems, leveraging TWC's existing integration work on the L&I portal (active contract through 2027).
 
 ---
 
-## Risk Mitigation
+## Technical & Compliance Standards
 
-We recognize the fixed-price constraint transfers scope-expansion risk to the consultant. Our response: Phase I culminates in a written Scope Validation Recommendation that the City approves before content development begins — a contractual gate that protects both parties. We also flag Workday's limited native clause library as a material design constraint and propose addressing it in Phase II's System Recommendations Report with evaluated alternatives, so the City makes that integration decision on evidence rather than assumption.
+- **WCAG 2.1 AA (and 2.2 AA):** Every delivered UI passes automated and manual accessibility testing before deployment. A third-party certified accessibility audit is included in our fixed price; we publish a public Accessibility Conformance Report at launch.
+- **City IT Standards (Appendix K):** Full compliance with data, addressing, general technical, digital, and security standards. Security architecture addresses Confidentiality, Integrity, and Availability of all City data.
+- **SOC 2 Type II:** TWC holds an active SOC 2 Type II certification (annual); we will provide audit reports to the City and cooperate with any City-requested SSAE 18 SOC 2 Type II review.
+- **Data breach notification:** TWC's incident response policy mandates notification within **24 hours** of discovery—meeting the City's contractual requirement.
+- **Source code escrow:** As a proprietary-COTS hybrid, EventPath's source code will be deposited into an escrow arrangement satisfactory to the City at no cost, with regular updates maintained throughout the contract term.
+- **AI disclosure:** No generative AI features are proposed. Any AI-assisted proposal content has been reviewed, verified, and certified by TWC subject-matter experts.
 
 ---
 
-## Proposed Fixed Price
+## Implementation Plan
 
-*Full line-item cost breakdown by phase, task, activity, and deliverable is provided in the attached Cost Proposal (Appendix A) per RFP Section 4 requirements.* Our all-in fixed price is structured to cover all four phases, all required deliverables, all reporting obligations, and a contingency reserve for scope discoveries surfaced during Phase I inventory.
+| Phase | Milestone | Timeline |
+|---|---|---|
+| 1 — Discovery & Configuration | Requirements validation, workflow mapping, City environment assessment | Weeks 1–6 |
+| 2 — Build & Integration | Platform configuration, API integrations, data migration | Weeks 7–16 |
+| 3 — Testing & Accessibility Audit | UAT with OCRSE staff, third-party accessibility audit, performance benchmarking | Weeks 17–20 |
+| 4 — Training & Pilot | Staff training delivery, parallel-run pilot with live applications | Weeks 21–24 |
+| 5 — Go-Live & Reliability Period | Full production launch, 30-day reliability period, Final Acceptance | Weeks 25–28 |
+
+**Target go-live:** Ahead of 2026 event season. Phased deployment prioritizes OCRSE's highest-volume permit types first, ensuring operational readiness before FIFA and MLB All-Star surge windows.
 
 ---
 
-**Proposal Lead:** R. Park, Procurement Specialist | proposals@techweekconsortium.coop | 215-555-0119
-**Submitted electronically via eContract Philly on or before April 13, 2026, 5:00 PM ET**
+## Training & Support
+
+**Training program (Appendix A.2):** TWC will deliver role-differentiated training covering system navigation, application processing, report generation, and troubleshooting across three audience groups: OCRSE administrators, City department reviewers, and help-desk staff. Formats include live instructor-led sessions (virtual and in-person at City Hall), recorded video tutorials, user manuals, and an FAQ knowledge base. A detailed training plan—including schedule, format, audience assignments, and City responsibilities—will be delivered in Week 3.
+
+**Maintenance & support:**
+- **Year 1:** Included in fixed price. Severity-classified response SLAs with best-efforts resolution within **48 hours** for all defects.
+- **Years 2–5:** Priced as separate fixed-price line items in our cost proposal.
+- **5-year availability:** TWC contractually guarantees platform availability and support for a minimum of five years from Final Acceptance.
+- **Single point of contact:** One named TWC engagement lead holds accountability for the full turnkey scope.
+- **Escalation procedures:** Documented severity tiers (P1–P4) with defined response, escalation, and fix-time targets provided in the full technical proposal.
+
+**Warranty:** 1-year warranty included in fixed price; Years 2–3 warranty priced as optional line items. Coverage extends to all software, design, implementation, and integration deliverables on a turnkey basis.
+
+---
+
+## Commercial Terms
+
+- **Pricing:** Fixed price only. Full line-item cost breakdown provided for all software, configuration, implementation, integration, training, and maintenance (Years 1–5). No time-and-materials or cost-plus elements.
+- **Tax status:** City's exemption from sales, use, and federal excise taxes is reflected in all pricing.
+- **Retainage:** TWC acknowledges the 20% retainage requirement and has cash-flow plans in place accordingly.
+- **Bonds & insurance:** TWC will provide all required performance, labor and materialmen's, and fidelity bonds. Insurance coverages meet or exceed all City minimums, including **$1M Cyber Liability** (City named as additional insured) and **$1M Professional Liability E&O** with 2-year tail coverage.
+- **Proposals binding:** This proposal remains binding for 180 days from the March 17, 2026 submission date.
+
+---
+
+## Qualifications & Local Impact
+
+TWC has delivered production software to the City of Philadelphia continuously since 2016. Our current L&I portal engagement gives us direct, working knowledge of the City's infrastructure, procurement environment, and interdepartmental coordination patterns—materially reducing discovery risk and integration effort for this project.
+
+**Relevant experience highlights:**
+
+- **City of Philadelphia L&I Portal (2016–present):** ~85,000 active licenses; Django/PostgreSQL; public APIs; 4-minute average completion time (down from 19). Direct analog to EventPath's permitting architecture.
+- **PA Dept. of Health — COVID Vaccine Eligibility (2021):** 4.1M users at peak; surge-capacity design; 0 critical accessibility findings on independent audit.
+- **School District of Philadelphia — Family Communications Platform (2023):** Sub-200ms broadcast latency to 200K recipients; WCAG 2.2 AA; 11-language support.
+- **Camden County Open Data Platform (2024):** Co-designed with community partners; 80+ datasets; public API.
+
+**Technical qualifications:** TWC staff hold demonstrated experience across large-scale distributed database design, WAN/LAN integration, software design and testing, help desk operations, large-scale project management, high-availability/mission-critical systems, municipal information systems, and transition management—meeting the City's preferred 5-year experience threshold across all listed domains.
+
+**Local Business Entity:** TWC is headquartered at 1234 Market Street—three blocks from City Hall. We are a verified City of Philadelphia M/W/DSBE and Pennsylvania Small Diverse Business. All work is performed by Philadelphia-based TWC members; no out-of-region subcontractors.
+
+**Financial stability:** TWC surpassed $9.4M in annual revenue in 2025 with a 100% client renewal rate for engagements over six months. Three years of audited financial statements, bank reference, bonding capacity documentation, and all required Appendix H forms are included in Volume 1.
+
+---
+
+## Compliance Checklist
+
+| Requirement | Status |
+|---|---|
+| eContract Philly registration | ✅ Registered; TIN/name verified |
+| Appendix D Requirements Compliance Matrix | ✅ Completed in full |
+| Fixed-price proposal | ✅ No T&M or cost-plus elements |
+| Campaign contribution disclosure (Ch. 17-1400) | ✅ Completed; contribution history reviewed |
+| Equal Benefits Ordinance (Ch. 17-1900) | ✅ Compliant |
+| Demographic data disclosure | ✅ Submitted |
+| LGBTQ Applicant Opportunity Data (Appendix M) | ✅ Voluntarily disclosed |
+| Appendix H Tax & Regulatory Clearance | ✅ Included |
+| AI use disclosure / human review certification | ✅ Certified |
+| Years 2–5 maintenance line items | ✅ Included in cost proposal |
+
+---
+
+*Contact: R. Park, Procurement Specialist | proposals@techweekconsortium.coop | 215-555-0119 | 1234 Market Street, Suite 800, Philadelphia, PA 19107*

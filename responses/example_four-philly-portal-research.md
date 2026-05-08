@@ -1,215 +1,236 @@
-# RFP Analysis: Supply Chain Strategy Development and Document Rationalization
-## City of Philadelphia | OPAL Project
+# RFP Analysis: City of Philadelphia Special Event Permitting Software Solution
+
+## PROJECT OVERVIEW
+- **Issuing Agency:** Office of City Representative and Special Events (OCRSE)
+- **Project Intake #:** 1140
+- **Proposal Deadline:** March 17, 2026, 5:00 PM
+- **Anticipated Project Start:** May 15, 2026
+- **Volume:** ~1,700 special event applications annually
 
 ---
 
 ## SECTION 1: REQUIREMENTS
 
-### 1.1 Project Scope Requirements
+### 1.1 Functional Requirements (Appendix A.1)
 
-#### Phase I – Initiation
-| # | Requirement | Details |
-|---|-------------|---------|
-| R-1.1 | Document Inventory | Conduct comprehensive inventory of all existing documents and templates across all document types |
-| R-1.2 | Document Types Coverage | Must address: Regulations/Policies/Procedures; Contracts & Agreements (Procurement, Sales, MOUs, Other); RFx Templates (RFB, RFP, Special Prequalification, Specialty); Procurement Exhibits & Attachments; Standard Operating Manuals & FAQs; Standard Promotional Documents |
-| R-1.3 | Document Rationalization Plan | Develop a plan for aggregation/consolidation of documents into logical storage structure with searchable functionality |
-| R-1.4 | Cross-Reference Capability | Storage structure must support cross-referencing and searching by: document type, department, expiry, creation date, and revision history |
-| R-1.5 | Template Index Creation | Generate an index of templates designating each as: existing, existing requiring revision, or new |
-| R-1.6 | Associated Document Collection | Collect and rationalize all attachments, exhibits, disclosures, and other associated documents; evaluate for consolidation opportunities |
-| R-1.7 | Scope Validation | Make recommendations for documents to be managed and templates to be created/maintained before commencing detailed content development |
-| R-1.8 | Systems Survey | Survey existing systems for content including: PHLContracts (SaaS), ACIS (Oracle-based), FAMIS (mainframe), ADPICs (mainframe), shared drives, SharePoint, OnePhilly Oracle platform |
-| R-1.9 | Gap/Redundancy Identification | Identify gaps and redundancies across documents and templates |
+| Req # | Requirement | Description |
+|-------|-------------|-------------|
+| A.1.1 | Multi-application hosting | Support multiple permit application types and concurrent management |
+| A.1.2 | Permit generation and distribution | Create, manage, and issue permits directly through the system |
+| A.1.3 | Service request creation | Generate service requests/tasks based on applicant inputs |
+| A.1.4 | Post-submission editing | Allow modification of submitted applications and document uploads (with workflow controls) |
+| A.1.5 | Conditional logic workflows | Configurable workflows with conditional logic adapting routing, required fields, and documentation |
+| A.1.6 | Real-time status tracking | Transparent real-time status updates for applicants and City personnel |
+| A.1.7 | External communication | Direct messaging between applicants and City with retained message history |
+| A.1.8 | Internal collaboration tools | Communication/collaboration features for interdepartmental coordination |
+| A.1.9 | Centralized dashboards and calendars | Unified views of applications, events, and schedules |
+| A.1.10 | Third-party integrations | Integration with billing/payment, GIS, business licensing, supplemental applications via API, SSO, webhooks, file exchange |
+| A.1.11 | Invoice management | Tools for generating and managing invoices |
+| A.1.12 | Multi-user access and permissions | Multiple user profiles with configurable permission levels/roles |
 
-#### Phase II – Design
-| # | Requirement | Details |
-|---|-------------|---------|
-| R-2.1 | Template Structure Model | Develop a template structure model for each type of template |
-| R-2.2 | Clause Library Compatibility | Templates must employ, where possible, a controlled clause library structure compatible with a fully functional clause library-based system |
-| R-2.3 | Clause Consolidation | Consolidate clauses to drive efficiency |
-| R-2.4 | Fixed/Variable Clause Drafting | Draft clauses as either fixed or variable, with variable information in separate clauses to drive efficient document review |
-| R-2.5 | System Recommendations – Documents | Evaluate and recommend systems for storing, searching, and managing documents by type |
-| R-2.6 | System Recommendations – Templates | Evaluate and recommend systems for storing, searching, and managing templates by type |
-| R-2.7 | Clause Library Evaluation | Evaluate planned systems (particularly Workday Strategic Sourcing) for suitability of clause library functionality and consider integration alternatives |
-| R-2.8 | Procurement Template Coverage | Address approximately 15 major procurement template categories including federal and local variants (IFB/RFP) for: Goods, Vehicle, Equipment, IT Hardware, IT Software, IT Services, Construction, A&E, CM, Professional Services, HHS, Benefits, Maintenance/Site, Artist, Staff Augmentation, RFQ, NDA |
+### 1.2 Training and Support Requirements (Appendix A.2)
 
-#### Phase III – Creation
-| # | Requirement | Details |
-|---|-------------|---------|
-| R-3.1 | Content Development | Develop new content for documents and templates on a clause basis for maintenance efficiency |
-| R-3.2 | Clause Maximization | Write clauses to maximize uniformity and business efficiency |
-| R-3.3 | Standard Alternates | Include standard alternate or fallback content for clauses |
-| R-3.4 | Document Index Regeneration | Regenerate document index to include new templates at phase completion |
+| Req # | Requirement | Description |
+|-------|-------------|-------------|
+| A.2.1 | Training delivery | Comprehensive sessions covering: system navigation, application processing, report generation, troubleshooting |
+| A.2.2 | Training materials | User manuals/guides, video tutorials/session recordings, FAQs |
+| A.2.3 | Training plan | Detailed plan specifying format, schedule, scope, audience groups, and assumptions |
 
-#### Phase IV – Implementation (Timeline Only)
-| # | Requirement | Details |
-|---|-------------|---------|
-| R-4.1 | Implementation Phase | January 2027 – April 2027 |
+### 1.3 Technical/Infrastructure Requirements
 
----
+| Category | Requirement |
+|----------|-------------|
+| Deployment | Installed on existing City equipment and networks |
+| Performance standards | Must specify throughput, processing volumes, response times on City's current environment |
+| Equipment upgrades | Must identify any necessary upgrades with detailed specifications and dual performance standards (with/without upgrades) |
+| Hardware/network services | NOT included in contract scope; City will procure separately |
+| Solution type | COTS, configurable, custom, or hybrid acceptable |
+| Architecture | Must describe software architecture (2-tier/3-tier), workflow processing, reporting infrastructure, archiving/auditing plan |
+| Disaster recovery | Must outline disaster recovery plan |
+| Bandwidth | Must specify anticipated bandwidth requirements |
 
-### 1.2 Service Delivery Requirements
+### 1.4 Performance Standards Required in Proposal (Vol. 2, Sec. 3)
 
-| # | Requirement | Details |
-|---|-------------|---------|
-| R-5.1 | Weekly Project Meetings | Meet with City Project Team no less than weekly to track progress and share information |
-| R-5.2 | Written Progress Reports | Provide written reports and oral updates on project findings at each scheduled meeting |
-| R-5.3 | Executive Reports | Prepare and deliver high-level reports to the Executive Project Team quarterly and/or upon completion of each project phase |
-| R-5.4 | Quick Wins Reporting | Document and report Quick Wins (improvements implementable in weeks to a few months for little or no cost) as they are identified |
-| R-5.5 | Quick Win Documentation | Each Quick Win must include: Description, Cost to Implement, Time to Implement, Expected Improvement, Measurement of Improvement |
-| R-5.6 | Monthly Milestone Reports | Submit monthly milestone reports with each required deliverable report |
-| R-5.7 | Project Schedule | Provide schedule in two formats: (1) high-level milestone timeline and (2) Gantt format schedule with task-level detail |
-| R-5.8 | Schedule Maintenance | Maintain schedule in baseline, actual, and projected format; advise City of progress no less than monthly |
-| R-5.9 | 12-Month Completion | Complete entire project within less than 12 months |
-| R-5.10 | Project Start Date | Commence work on or about June 1, 2026 |
+- Server Disk I/O
+- Transactions Per Minute (TPM)
+- Page Swapping
+- Response Time
+- Throughput
+- System Availability (mean time to failure / mean time to repair)
+- Bandwidth utilization (bytes per second under all load conditions)
 
----
+### 1.5 IT Standards Compliance (Appendix K)
 
-### 1.3 Reporting/Deliverable Requirements
+| Standard | Requirement |
+|----------|-------------|
+| Data Requirements | Data access, master data, metadata standards, date formats, geospatial data, data protection and retention |
+| Addressing Standards | All database systems maintaining property addresses |
+| General Technical Standards | Resilience and security for IT systems |
+| Digital Standards | Design, code, and content guidelines for web applications |
+| Web Accessibility | WCAG 2.1 AA compliance required for all City-facing web content |
+| Security | Confidentiality, integrity, and availability protections for all City Data |
 
-| # | Deliverable | Description |
-|---|-------------|-------------|
-| R-6.1 | Current State Diagnostic Report | Assessment of existing document landscape and systems |
-| R-6.2 | Future State Organization Model & Governance Framework Recommendation | Recommendations for future document management structure |
-| R-6.3 | Final Executive Report & Presentation | Comprehensive final report for executive stakeholders |
-| R-6.4 | Document Rationalization Plan | Logical storage structure with searchability and cross-reference capability |
-| R-6.5 | Template Index | Indexed listing of all templates with designation status |
-| R-6.6 | System Recommendation Report | Recommendations for document and template management systems |
-| R-6.7 | Template Structure Models | Structure models for each template type |
-| R-6.8 | Created Templates and Documents | New/revised templates and documents developed in Phase III |
+### 1.6 Contract/Legal Requirements
 
----
+| Requirement | Details |
+|-------------|---------|
+| Fixed price proposal | All costs must be fixed price; no time-and-materials or cost-plus |
+| Maintenance and support | Minimum 1 year included; pricing required for years 2–5; 5-year availability guarantee |
+| Warranty | Minimum 1-year turnkey warranty from final acceptance; City prefers 2+ years |
+| Source code | Delivery and ownership of custom code; escrow required for proprietary code at no expense to City |
+| Insurance – General Liability | $1M per occurrence; $2M aggregate |
+| Insurance – Professional Liability | $1M with ≤$50K deductible; 2-year tail coverage |
+| Insurance – Cyber Liability | $1M per claim/aggregate; 2-year extended discovery |
+| Insurance – Workers' Comp | Statutory limits |
+| Insurance – Auto | $1M per occurrence |
+| Retainage | 20% withheld until final acceptance |
+| Proposal binding period | 180 days from submission date |
+| Data breach notification | Within 24 hours of discovery |
+| Security audits | SSAE 18, SOC 2 Type II and SOC 1 reports, up to once per year |
+| Equal Benefits Ordinance | Required for contracts >$250K (Chapter 17-1900) |
+| Campaign contribution disclosure | Required per Chapter 17-1400 |
+| Tax clearance | Must submit Philadelphia Tax and Regulatory Status and Clearance Statement |
+| Document preparation fee | Per schedule (e.g., $1,500 for for-profit contracts >$1M) |
 
-### 1.4 Technology Requirements
+### 1.7 Proposal Submission Requirements
 
-| # | Requirement | Details |
-|---|-------------|---------|
-| R-7.1 | Workday Compatibility | Work product must be compatible with Workday ERP (Procurement, Finance, and Strategic Sourcing modules) |
-| R-7.2 | Modern Systems Formatting | New work product must be formatted to leverage modern systems |
-| R-7.3 | Preferred Technology Capabilities | Must address: Secure & Compliant Infrastructure; Cybersecurity & Regulatory Compliance; Data Governance & Information Management; Digital Service Delivery Platforms; Enterprise Systems Modernization; Transparency, Oversight, & Reporting; Program & Portfolio Governance Tools |
-
----
-
-### 1.5 Proposal/Submission Requirements
-
-| # | Requirement | Details |
-|---|-------------|---------|
-| R-8.1 | Electronic Submission | Must submit through eContract Philly (not email) before April 13, 2026 at 5PM |
-| R-8.2 | Authorized Signature | Must be signed by an authorized representative |
-| R-8.3 | Fixed Price Proposal | Must provide fixed-price cost proposal; time-and-materials or cost-plus not accepted |
-| R-8.4 | Line-Item Cost Breakdown | Must identify each principal task, activity, and deliverable with individual costs |
-| R-8.5 | Milestone-Based Invoicing | Invoicing required per completion of each phase/milestone |
-| R-8.6 | Table of Contents | Required as first section of proposal |
-| R-8.7 | Executive Summary | Overview of company, services, and approach to meeting City's needs |
-| R-8.8 | Applicant Profile | Complete business information including tax ID, contact information, business background |
-| R-8.9 | Proposed Scope of Work | Specific response to Section 3 requirements with budget and schedule |
-| R-8.10 | Statement of Qualifications | Relevant experience demonstrating how firm meets City requirements |
-| R-8.11 | References | Minimum three references, preferably for similar projects; government entity references preferred |
-| R-8.12 | Subcontractor List | Complete list including company name, EIN, scope of work, percentage of total work |
-| R-8.13 | Contract Exception Requests | Must identify any requested exceptions to contract terms |
-| R-8.14 | Tax Clearance Statement | Completed Appendix B with Tax Clearance Certificate |
-| R-8.15 | Litigation Disclosure | Description of any legal proceedings or contract disputes in past five years |
-| R-8.16 | Financial Capacity Statement | Documentation demonstrating fiscal solvency |
-| R-8.17 | LBE/Local Impact Certification | Statement of Local Business Entity status or local economic impact |
-| R-8.18 | Political Contribution Disclosure | Mandatory disclosure through eContract Philly |
-| R-8.19 | Team Summary Table | Completed Appendix C for all key personnel |
-| R-8.20 | Sample Reports | Actual client reports/documents/templates from similar projects |
-| R-8.21 | 180-Day Binding Period | Proposal binding for minimum 180 calendar days from submission deadline |
-
----
-
-### 1.6 Compliance Requirements
-
-| # | Requirement |
-|---|-------------|
-| R-9.1 | Active Business Income and Receipts Tax (BIRT) Account |
-| R-9.2 | Active Commercial Activity License (CAL) |
-| R-9.3 | Philadelphia Tax and Regulatory Status Clearance (Appendix B) |
-| R-9.4 | Political contribution disclosures and limits compliance |
-| R-9.5 | Contracting Disclosures and workforce demographic information |
-| R-9.6 | Contract Preparation Fee payment |
-| R-9.7 | 21st Century Minimum Wage and Benefits Standard (Philadelphia Code Sec. 17-1300) for contracts classified as "Service Contracts" |
-| R-9.8 | Equal Benefits for life partners of employees (contracts ≥ $250,000, Philadelphia Code Sec. 17-1900) |
-| R-9.9 | HIPAA compliance if applicable |
-| R-9.10 | Confidentiality of City information |
-| R-9.11 | No City employee conflict of interest |
-| R-9.12 | Compliance with all applicable City laws, regulations, and policies |
+| Component | Requirement |
+|-----------|-------------|
+| Submission platform | eContract Philly (electronic only) |
+| Volume 1 | Qualifications (company description, technical qualifications, financial qualifications) |
+| Volume 2 | Technical approach and cost proposal (5 sections) |
+| Requirements Compliance Matrix | Excel spreadsheet per Appendix D; must be completed for all A.1 and A.2 requirements |
+| Implementation plan | Detailed methodology, SOW, project schedule, milestone payment schedule |
+| Cost proposal | Line-item fixed pricing per Appendix C template |
+| AI use certification | Must certify human expert review and lawful ownership of AI-assisted content |
 
 ---
 
 ## SECTION 2: EVALUATION CRITERIA
 
-### 2.1 Scoring Criteria
+### 2.1 Formal Evaluation Factors (Section 2.11.4)
 
-*Note: The RFP does not specify weighted scores for each criterion. Criteria are listed in order of presentation.*
+| Factor | Description |
+|--------|-------------|
+| 1 | **Project understanding and methodology** – Detail and accuracy of proposed scope, SOW, and implementation plan |
+| 2 | **Campaign contribution eligibility** – Compliance with Chapter 17-1400 |
+| 3 | **Prior experience** – References from comparable projects; demonstrated ability to deliver |
+| 4 | **Solution quality and fitness** – Impact on department operations; demonstrated operational efficiency |
+| 5 | **Skill, reputation, timeliness** – Financial and technical qualifications; commitment to project timeline |
+| 6 | **Incumbent transition benefit** – Operational continuity considerations |
+| 7 | **Small/new business development** – Promotion of competitive development and experience for smaller firms |
+| 8 | **Cost** – Lower overall cost; material but not sole or determining factor |
+| 9 | **Administrative efficiency** – Requires less City oversight |
+| 10 | **Long-term cost effectiveness** – Anticipated total cost of ownership |
+| 11 | **Prequalification requirements** – Meets all RFP qualification criteria |
+| 12 | **Local Business Entity/Local Impact** – Certification per Executive Order 04-12 |
 
-| Priority | Criterion | Description |
-|----------|-----------|-------------|
-| 1 | Capacity to Meet Requirements | Superior ability or capacity to meet particular requirements of contract and needs of the City Department |
-| 2 | Campaign Contribution Eligibility | Eligibility under Philadelphia Code provisions relating to campaign contributions |
-| 3 | Prior Experience | Superior prior experience of Applicant and staff |
-| 4 | Quality of Proposed Solution | Superior quality, efficiency, and fitness of proposed solution for City Department |
-| 5 | Skill and Reputation | Superior skill and reputation, including timeliness and demonstrable results |
-| 6 | Incumbent Benefit | Special benefit to continuing services of incumbent (transition costs, service continuity) |
-| 7 | Local/Small Business Development | Benefit of promoting long-term competitive development; allocation of experience to new, local, or small businesses |
-| 8 | Cost | Lower cost (important but not sole or deciding factor) |
-| 9 | Administrative Efficiency | Administrative and operational efficiency requiring less City oversight and administration |
-| 10 | Long-Term Cost Effectiveness | Anticipated long-term cost effectiveness |
-| 11 | Prequalification | Meets prequalification requirements |
-| 12 | Local Business Entity Status | Applicant's certification of LBE/Local Impact status |
+> ⚠️ **Note:** No weighting or priority order is assigned to these factors. The City retains sole discretion in evaluation and award.
 
----
+### 2.2 Volume 1 Evaluation (Qualifications)
 
-### 2.2 Technical Qualifications Evaluation
+| Area | Details |
+|------|---------|
+| Technical qualifications | Minimum 5 years preferred in: large-scale database design, WAN/LAN integration, software design/testing, help desk, CBT development, large-scale project management, high availability systems, wireless technology, municipal information systems, Oracle-based applications, network infrastructure, architecture/design |
+| Financial capacity | Audited financial statements (3 years), bank reference, bankruptcy disclosures, SEC filings (10-K, 8-K) |
+| References | Comparable size, complexity, and scope; must include current owner contact and reason for reference |
+| Philadelphia experience | Projects >$100K in Philadelphia in last 5 years; City contracts; government contracts |
 
-| Criterion | What Will Be Evaluated |
-|-----------|------------------------|
-| General & Category Experience | Experience in public sector Law and Procurement business documents including templates; ERP systems; document lifecycle management; clause library usage |
-| Organizational Experience | Procurement transformation; operating model redesign; strategic sourcing reform; government/decentralized organization experience; analytical and executive-facing capabilities |
-| Public Sector Focus | Preferred: public sector procurement transformation experience; centralized procurement governance implementation |
-| Project Approach | Thoroughness; balance of interactive decision-making vs. self-directed surveying; regular consultation and project adjustment mechanisms |
-| Project Experience | Demonstrated experience in creating/delivering projects that review and update business documents and templates (evaluated at firm, team, and individual levels) |
-| Sample Reports | Ability to communicate clearly and concisely in written and graphic format: data, concepts, strategies, and decision points |
-| Team Organization | Relationship structure to City; project governance; City integration approach |
-| Team Members | Detailed listing with resumes, roles, duties, and completed Team Summary Table (Appendix C) |
-| Milestones/Schedule | High-level milestone timeline AND Gantt format schedule; ability to complete within 12 months |
+### 2.3 Volume 2 Evaluation (Technical and Cost)
 
----
+| Section | Evaluation Focus |
+|---------|-----------------|
+| Organization & Management | Org charts, key personnel resumes, system development methodology |
+| Scope of Work Plan | Task completeness, effort estimates, personnel assignments, assumptions |
+| Technical Proposal | Architecture, infrastructure, performance standards, disaster recovery, bandwidth, security |
+| Cost Proposal | Line-item pricing per Appendix C; fixed price; no taxes |
+| Requirements Compliance Matrix | Complete, accurate response to all A.1 and A.2 requirements |
 
-### 2.3 Selection Process
+### 2.4 Responsiveness Standards
 
-| Stage | Timing | Details |
-|-------|--------|---------|
-| Proposal Review | Post April 13, 2026 | Evaluation by City review team |
-| Interviews/Presentations | April 20 – April 30, 2026 | By invitation only; in-person or virtual |
-| Applicant Selection | May 11 – May 15, 2026 | City sole discretion |
-| Contract Execution | May 22 – May 30, 2026 | |
-| Notice of Award | Post-award | Published on eContract Philly |
+A proposal may be deemed non-responsive and rejected without evaluation if:
+- Not submitted via eContract Philly by deadline
+- Requirements Compliance Matrix is missing or materially incomplete
+- Does not provide fixed-price proposal
+- Does not identify each work item by line item
+- Applicant fails to demonstrate required qualifications
+- Campaign contributions exceed permissible thresholds
 
 ---
 
 ## SECTION 3: RISKS
 
-### 3.1 Project Execution Risks
+### 3.1 Timeline and Scheduling Risks
 
-| Risk ID | Risk | Likelihood | Potential Impact | Notes |
-|---------|------|------------|------------------|-------|
-| PR-1 | **Scope Creep** | High | High | City explicitly reserves the right to change service requirements or deliverables based on changed circumstances without issuing a revised RFP |
-| PR-2 | **Compressed Timeline** | High | High | Entire project must complete in under 12 months (June 2026 – April 2027) spanning four major phases; aggressive schedule for volume of document types |
-| PR-3 | **System Complexity** | High | High | Must survey and integrate with multiple legacy systems: PHLContracts, ACIS (Oracle), FAMIS (mainframe), ADPICs (mainframe), SharePoint, OnePhilly, and others |
-| PR-4 | **Workday Clause Library Limitations** | High | High | RFP explicitly states "Workday Strategic Sourcing has limited clause library functionality" — a core dependency of the template strategy |
-| PR-5 | **Concurrent ERP Implementation** | High | High | OPAL/Workday ERP implementation is ongoing; Consultant must coordinate with this parallel project and potential FY28 launch |
-| PR-6 | **Decentralized Current State** | High | Medium | City currently operates a largely decentralized procurement model; existing documents are spread across multiple disparate systems |
-| PR-7 | **Undefined System Boundaries** | Medium | Medium | Existing systems survey "may include other Systems" — scope of discovery work is not fully bounded |
-| PR-8 | **Phase Concurrence** | Medium | Medium | Phases may overlap ("occur with some concurrence") creating potential coordination and quality control challenges |
-| PR-9 | **Document Volume Uncertainty** | Medium | High | Scope validation in Phase I may reveal significantly more or fewer documents than anticipated, affecting timeline and cost |
+| Risk | Description | Severity |
+|------|-------------|----------|
+| **Compressed timeline** | RFP issued February 17; project start anticipated May 15 – only ~3 months from RFP to contract | High |
+| **2026 major events pressure** | MLB All-Star Game and FIFA World Cup create hard deadlines for system readiness | High |
+| **Schedule slippage** | Milestone payment schedule tied to acceptance; delays affect cash flow and project completion | Medium |
+| **30-day reliability period** | Must operate 30 consecutive days without material defect before final acceptance; failure restarts clock | Medium |
+
+### 3.2 Technical Risks
+
+| Risk | Description | Severity |
+|------|-------------|----------|
+| **Legacy infrastructure compatibility** | System must run on existing City equipment; performance may be constrained | High |
+| **Integration complexity** | Required integrations with payment processing, GIS, business licensing, SSO create multiple failure points | High |
+| **Eight event types with different workflows** | Complex conditional logic required; misconfiguration could break routing | Medium |
+| **Multi-department coordination** | Cross-departmental workflows increase change management complexity | Medium |
+| **Performance standards on current hardware** | Must specify performance with and without upgrades; risk of underperformance if City does not procure upgrades | Medium |
+| **Data migration** | Transition from PDF-based process; historical data may need to be migrated or reconciled | Medium |
+
+### 3.3 Contractual and Legal Risks
+
+| Risk | Description | Severity |
+|------|-------------|----------|
+| **20% retainage held until final acceptance** | Significant cash flow impact for vendor; final acceptance may be delayed | High |
+| **Broad City discretion** | City may reject any proposal, modify terms, negotiate with multiple vendors, or cancel RFP without obligation | High |
+| **Proposal binding for 180 days** | Vendor locked into pricing and terms for 6 months without guarantee of award | Medium |
+| **Turnkey warranty and support obligation** | Vendor solely responsible for all elements including third-party components | High |
+| **Source code escrow obligations** | Proprietary software must be escrowed at vendor's expense; ongoing update obligations | Medium |
+| **Intellectual property indemnification** | Vendor must defend and indemnify against any third-party IP claims at its own expense | High |
+| **Data breach liability** | 24-hour notification requirement; recreation of lost data at no charge; breach response obligations | High |
+| **Campaign contribution ineligibility** | Contributions exceeding Chapter 17-1404(1) thresholds render vendor ineligible | Medium |
+| **Liquidated damages** | 10% of contract value for campaign contribution violations or material disclosure misstatements | High |
+
+### 3.4 Financial Risks
+
+| Risk | Description | Severity |
+|------|-------------|----------|
+| **Fixed price requirement** | All costs must be fixed; scope changes handled via Change Order only; risk of scope creep | High |
+| **Document preparation fee** | Up to $1,500 for contracts over $1M (plus potential double fee for extensive negotiation) | Low |
+| **Post-implementation modification costs** | Vendor must disclose pricing model for changes after go-live; City may prefer self-service configuration | Medium |
+| **Hardware upgrade costs not in scope** | If City does not procure recommended hardware upgrades, performance risk falls to vendor's contractual standards | Medium |
+
+### 3.5 Compliance and Regulatory Risks
+
+| Risk | Description | Severity |
+|------|-------------|----------|
+| **WCAG 2.1 AA compliance** | Public-facing components must meet accessibility standards; retrofitting is costly | Medium |
+| **Philadelphia tax compliance** | Vendor and all subcontractors must be in tax compliance; non-compliance can disqualify | Medium |
+| **Equal Benefits Ordinance** | Contracts >$250K require equal benefits for domestic partners; non-compliance is material breach | Medium |
+| **Chapter 17-1400 disclosures** | Quarterly campaign contribution disclosures required throughout contract term | Low |
+| **Transparency demographic disclosures** | Contracts ≥$94K require workforce and board demographic data submission before conformance | Low |
+
+### 3.6 Operational and Organizational Risks
+
+| Risk | Description | Severity |
+|------|-------------|----------|
+| **Change management across departments** | Multiple City agencies must adopt new workflows; resistance may slow adoption | High |
+| **Training adequacy** | Insufficient training for City personnel could undermine system effectiveness | Medium |
+| **Applicant onboarding** | Public users (event organizers) must transition from PDF submissions; may require outreach | Medium |
+| **Key personnel substitution** | City must approve any substitution of key personnel proposed in the winning bid | Medium |
+| **Subcontractor vetting** | All subcontractors subject to City approval; non-compliant subcontractors must be replaced | Low |
 
 ---
 
-### 3.2 Commercial/Financial Risks
+## SUMMARY MATRIX
 
-| Risk ID | Risk | Likelihood | Potential Impact | Notes |
-|---------|------|------------|------------------|-------|
-| CR-1 | **Fixed Price Exposure** | High | High | All proposals must be fixed-price; cost-plus and T&M are explicitly rejected; full discovery of document volume not complete until Phase I is underway |
-| CR-2 | **Milestone Payment Dependency** | Medium | Medium | Payments tied to milestone completion; delays in City approvals could delay contractor payments |
-| CR-3 | **Contract Maximum Not-to-Exceed** | Medium | Medium | Contract includes a not-to-exceed maximum; scope changes could create budget pressure without formal amendment |
-| CR-4 | **Contract Duration Risk** | Low | Medium | Base
+| Category | Count |
+|----------|-------|
+| Functional requirements | 12 |
+| Training/support requirements | 3 |
+| Technical/infrastructure requirements | 8+ |
+| Evaluation factors | 12 |
+| Identified risks | 28 |
