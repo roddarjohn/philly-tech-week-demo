@@ -24,14 +24,14 @@ class RFPFlow(Flow[State]):
         self.state.agency = str(Crew(agents=[agent], tasks=[task]).kickoff())
         self._persist("agency", self.state.agency)
 
-    @listen(research_agency)
+    @start()
     def extract_requirements(self):
         self.state.requirements = claude.call(
             prompts.extract_requirements(self.state.brief)
         )
         self._persist("requirements", self.state.requirements)
 
-    @listen(extract_requirements)
+    @listen(and_(research_agency, extract_requirements))
     def write_summary(self):
         self.state.summary = claude.call(
             prompts.section(
@@ -43,7 +43,7 @@ class RFPFlow(Flow[State]):
         )
         self._persist("summary", self.state.summary)
 
-    @listen(extract_requirements)
+    @listen(and_(research_agency, extract_requirements))
     def write_approach(self):
         self.state.approach = claude.call(
             prompts.section(
@@ -55,7 +55,7 @@ class RFPFlow(Flow[State]):
         )
         self._persist("approach", self.state.approach)
 
-    @listen(extract_requirements)
+    @listen(and_(research_agency, extract_requirements))
     def write_qualifications(self):
         self.state.qualifications = claude.call(
             prompts.section(
