@@ -11,7 +11,7 @@ from utils import write_response
 
 class RFPFlow(Flow[State]):
     def _persist(self, step: str, content: str) -> None:
-        write_response(f"example_seven-{self.state.name}-{step}", content)
+        write_response("example_seven", f"{self.state.name}-{step}", content)
 
     @start()
     def research_agency(self):

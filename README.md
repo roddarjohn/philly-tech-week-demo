@@ -33,7 +33,7 @@ just four
 just five
 ```
 
-Outputs land in `responses/example_<n>-<brief>[-<step>].md`.
+Outputs land in `responses/example_<n>/<brief>[-<step>].md`.
 
 | | What it shows |
 |---|---|

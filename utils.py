@@ -20,8 +20,8 @@ def read_company() -> str:
     return COMPANY_FILE.read_text()
 
 
-def write_response(name: str, content: str) -> Path:
-    path = Path("responses") / f"{name}.md"
+def write_response(example: str, name: str, content: str) -> Path:
+    path = Path("responses") / example / f"{name}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content)
     return path

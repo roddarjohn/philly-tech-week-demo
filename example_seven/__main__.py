@@ -10,7 +10,7 @@ def main() -> None:
         "brief": brief,
         "company": read_company(),
     })
-    output = write_response(f"example_seven-{name}", flow.state.draft)
+    output = write_response("example_seven", name, flow.state.draft)
     print(f"\nWrote {output}")
 
 

@@ -58,7 +58,7 @@ class RFPFlow(Flow[State]):
             agent=agent,
         )
         self.state.agency = str(Crew(agents=[agent], tasks=[task]).kickoff())
-        write_response(f"example_four-{self.state.name}-agency", self.state.agency)
+        write_response("example_four", f"{self.state.name}-agency", self.state.agency)
 
     @listen(research_agency)
     def research(self):
@@ -67,7 +67,7 @@ class RFPFlow(Flow[State]):
 
             {self.state.brief}
         """)
-        write_response(f"example_four-{self.state.name}-research", self.state.research)
+        write_response("example_four", f"{self.state.name}-research", self.state.research)
 
     @listen(research)
     def write(self):
@@ -110,5 +110,5 @@ if __name__ == "__main__":
     name, brief = read_brief()
     flow = RFPFlow()
     flow.kickoff(inputs={"name": name, "brief": brief, "company": read_company()})
-    output = write_response(f"example_four-{name}", flow.state.draft)
+    output = write_response("example_four", name, flow.state.draft)
     print(f"\nWrote {output}")

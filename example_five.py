@@ -78,5 +78,5 @@ if __name__ == "__main__":
     name, brief = read_brief()
     flow = RFPFlow()
     flow.kickoff(inputs={"brief": brief, "company": read_company()})
-    output = write_response(f"example_five-{name}", flow.state.draft)
+    output = write_response("example_five", name, flow.state.draft)
     print(f"\nWrote {output}")
