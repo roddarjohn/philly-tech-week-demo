@@ -19,4 +19,6 @@
 - Composability
   - Many workflows may have similar components that you can reuse (example six)
   
+Sample "production" example: example seven
+  
 https://tinyurl.com/philly-tech-week-crew-ai
