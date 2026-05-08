@@ -1,4 +1,3 @@
-```markdown
 # Tech Week Consortium — Proposal for City of Philadelphia Special Event Permitting Software Solution
 **Project Intake #1140 | Submitted via eContract Philly | March 17, 2026**  
 *Prepared by R. Park, Procurement Specialist | proposals@techweekconsortium.coop | 215-555-0119*
@@ -139,4 +138,3 @@ All pricing is fixed with no time-and-materials or cost-plus components. Line-it
 ---
 
 *Tech Week Consortium | 1234 Market Street, Suite 800, Philadelphia, PA 19107 | proposals@techweekconsortium.coop | 215-555-0119*
-```

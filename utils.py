@@ -1,7 +1,10 @@
+import re
 import sys
 from pathlib import Path
 
 from pypdf import PdfReader
+
+_FENCE = re.compile(r"\A```(?:markdown|md)?\s*\n(.*)\n```\s*\Z", re.DOTALL)
 
 DEFAULT_BRIEF_DIR = Path(__file__).parent / "briefs" / "philly-portal"
 COMPANY_FILE = Path(__file__).parent / "briefs" / "company.md"
@@ -23,5 +26,7 @@ def read_company() -> str:
 def write_response(example: str, name: str, content: str) -> Path:
     path = Path("responses") / example / f"{name}.md"
     path.parent.mkdir(parents=True, exist_ok=True)
+    if match := _FENCE.match(content.strip()):
+        content = match.group(1)
     path.write_text(content)
     return path

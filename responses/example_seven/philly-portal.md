@@ -1,4 +1,3 @@
-```markdown
 # Executive Summary
 
 ## Tech Week Consortium Response to RFP Project Intake #1140
@@ -588,4 +587,3 @@ The engagements outlined below represent our most directly comparable past perfo
 ## 4.7 Philadelphia Regional Experience — Projects Over $100,000 (Last Five Years)
 
 In accordance with Section 2.3 of the RFP's evaluation criteria, the following table summarizes all TWC engagements...
-```
