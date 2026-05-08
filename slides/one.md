@@ -1,14 +1,12 @@
-# Introduction
+# What's next?
 
-You have:
-- Many prompt files
-- Process descriptions
+Assumptions:
+- Many prompts floating around
+- Specific flows to progress through the prompts
 
 You may desire:
-- To run a similar process many times
-  - e.g. many RFPs to respond to
-- To experiment with different models
-- Composability or parallelism
+- To scale a process and make repeatable
+- Automate agents checking agents, human in the loop
 
 **Encode your "pipelines" in code**
 

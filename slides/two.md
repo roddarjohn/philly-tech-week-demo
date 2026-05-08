@@ -1,11 +1,10 @@
-# Why agentic pipelines?
+# Why pipelines?
 
 - Enables multi model work
   - One model can review work of another model
   
-- Introspect intermediate steps
-  - Critical to iterate
-  - A la Unix pipes
+- Introspect intermediate outputs
+  - Critical to iterate (a la Unix pipes)
   
 - Security: can lock tools / MCPs to specific steps
   - e.g. step 1 can research certain sites
