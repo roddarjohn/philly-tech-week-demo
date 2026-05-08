@@ -41,7 +41,7 @@ class RFPFlow(Flow[State]):
     @listen(or_(write, "apply_revisions"))
     @human_feedback(
         message="Review the draft above. Approve or describe revisions:",
-        emit=["approve", "revise"],
+        emit=["done", "revise"],
         llm="anthropic/claude-haiku-4-5",
     )
     def review(self):

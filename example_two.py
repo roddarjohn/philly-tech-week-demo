@@ -56,11 +56,11 @@ class RFPFlow(Flow[State]):
     @router(or_(write, rewrite))
     def review(self):
         verdict = llm.call(f"""
-            Review this proposal. Reply with APPROVE or list revisions:
+            Review this proposal. Reply with DONE or list revisions:
 
             {self.state.draft}
         """)
-        if "APPROVE" in verdict or self.state.iteration >= MAX_REVISIONS:
+        if "DONE" in verdict or self.state.iteration >= MAX_REVISIONS:
             return "done"
         self.state.feedback = verdict
         return "revise"
